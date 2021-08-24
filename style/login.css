@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'gotha';
 }
 
 #main {
@@ -12,7 +13,7 @@
 }
 
 .navbar {
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -54,6 +55,8 @@
     color: white;
 }
 
+
+/* Login styling  */
 #login {
     padding: 5% 0;
     background-color: #f6f7f9;
@@ -62,9 +65,87 @@
 }
 
 #login_details {
-    width: 30%;
+    width: 25%;
     height: 100%;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
+}
+
+form>div {
+    text-align: left;
+}
+
+form>div label {
+    width: 100%;
+    color: rgb(88, 88, 88);
+}
+
+form>div input {
+    padding: 0 2%;
+    color: rgb(65, 64, 64);
+    font-size: 14px;
+    height: 36px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(160, 160, 160, 0.438);
+    width: 100%;
+    border-radius: 3px;
+}
+
+form>div input:focus {
+    border: 1px solid rgba(0, 0, 255, 0.514);
+}
+
+form input[type='submit'] {
+    background-color: #02BFA0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+}
+
+/* footer styling  */
+
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #f6f7f9;
+    border-top: 1px solid #a8a8a87c;
+    padding: 3% 0;
+}
+
+#ins_footer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ins_footer>div>p:first-child {
+    margin-bottom: 2%;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.822); */
+    color: rgb(75, 75, 75);
+}
+
+#ins_footer>div>p:not(:first-child) {
+    color: gray;
+    line-height: 22px;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+}
+
+#img_link {
+    margin-top: 6%;
+}
+
+#img_link>a {
+    margin-right: 6%;
+}
+
+#img_link>a i {
+    color: #8A8A8A;
+    font-size: 22px;
 }
