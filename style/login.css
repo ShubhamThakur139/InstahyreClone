@@ -58,17 +58,64 @@
 
 /* Login styling  */
 #login {
-    padding: 5% 0;
+    padding: 3% 0;
     background-color: #f6f7f9;
     width: 100%;
     height: 600px;
 }
 
 #login_details {
-    width: 25%;
+    width: 24.5%;
     height: 100%;
     margin: auto;
     text-align: center;
+}
+
+#login h2 {
+    margin: 3% 0;
+    margin-bottom: 5%;
+    color: #40454A;
+}
+
+#login p {
+    color: #4A5056;
+    margin-bottom: 10%;
+}
+
+#login_links {
+    width: 100%;
+}
+
+#login_links div {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #0B84BD;
+    color: white;
+    margin: 4% 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#login_links div a {
+    text-decoration: none;
+    color: white;
+}
+
+#login_links div:last-child {
+    background-color: #dd4b39;
+}
+
+fieldset {
+    padding: 0;
+    min-width: 0;
+    margin: 8% 0;
+    border: 0;
+    border-top: 1px solid #D1D1D1;
+}
+
+legend {
+    padding: 0 5%;
+    color: #9e9d9d;
 }
 
 form>div {
@@ -78,13 +125,14 @@ form>div {
 form>div label {
     width: 100%;
     color: rgb(88, 88, 88);
+    font-size: 14px;
 }
 
 form>div input {
     padding: 0 2%;
     color: rgb(65, 64, 64);
     font-size: 14px;
-    height: 36px;
+    height: 38px;
     margin-top: 2%;
     margin-bottom: 5%;
     outline: none;
@@ -104,6 +152,12 @@ form input[type='submit'] {
     color: white;
     font-size: 16px;
     height: 40px;
+    font-weight: 500;
+}
+
+.link_tag {
+    text-decoration: none;
+    color: #0090CC;
 }
 
 /* footer styling  */
