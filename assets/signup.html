@@ -24,8 +24,8 @@
           <ul>
             <li><a href="">INVITE FRIENDS</a></li>
             <li><a href="">CUSTOMERS</a></li>
-            <li><a href="">LOGIN</a></li>
-            <li><a href="../assets/login.html">SIGNUP</a></li>
+            <li><a href="../assets/login.html">LOGIN</a></li>
+            <li><a href="">SIGNUP</a></li>
             <li><a href="">EMPLOYERS</a></li>
           </ul>
         </div>
@@ -41,6 +41,25 @@
       <div id="signup_divs">
         <div id="left_div"></div>
         <div id="right_div">
+          <!-- login links  -->
+          <div id="login_links">
+            <div>
+              <button class="btn_linkedin">
+                <i class="fab fa-linkedin" area-hidden="true"></i> Sign in with
+                Linkedin
+              </button>
+            </div>
+            <div>
+              <button class="btn_google">
+                <img
+                  src="https://static.instahyre.com/images/icons/google-signin.png"
+                  alt=""
+                />
+                Sign in with Google
+              </button>
+            </div>
+          </div>
+
           <!-- line  -->
           <fieldset class="line">
             <legend>OR</legend>
@@ -61,16 +80,14 @@
               <input type="password" id="signup_password" name="password" />
             </div>
 
-            <div>
-              <input type="checkbox" name="agree" id="agree" />
-              <label for="agree"
-                >I agree to the
-                <span><a href="" class="link_tag">Terms of Service</a></span>
-                and <span><a href="" class="link_tag"> Privacy Policy</a></span
-                >. I agree to receive the default email notifications, which I
-                can unsubscribe from at any time.</label
-              >
-            </div>
+            <input type="checkbox" name="agree" id="agree" />
+            <p class="agree_p">
+              I agree to the
+              <span><a href="" class="link_tag">Terms of Service</a></span>
+              and <span><a href="" class="link_tag"> Privacy Policy</a></span
+              >. I agree to receive the default email notifications, which I can
+              unsubscribe from at any time.
+            </p>
 
             <div class="sub">
               <input type="submit" value="Get Started" />
@@ -78,7 +95,7 @@
 
             <p>
               Already have an account?
-              <a href="" class="link_tag">Log in here</a>
+              <a href="../assets/login.html" class="link_tag">Log in here</a>
             </p>
           </form>
         </div>
