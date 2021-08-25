@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../style/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div id="main">
+      <div class="navbar">
+        <div class="navbar_heading">
+          <a href="">Instahyre</a>
+        </div>
+        <div class="navbar_links">
+          <ul>
+            <li><a href="">INVITE FRIENDS</a></li>
+            <li><a href="">CUSTOMERS</a></li>
+            <li><a href="../assets/login.html">LOGIN</a></li>
+            <li><a href="">SIGNUP</a></li>
+            <li><a href="">EMPLOYERS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Part  -->
+    <div id="signup">
+      <h1>Top companies. Full privacy. No spam.</h1>
+      <p>
+        If you're looking to hire, <span><a href="">click here</a> </span>
+      </p>
+      <div id="signup_divs">
+        <div id="left_div"></div>
+        <div id="right_div">
+          <!-- login links  -->
+          <div id="login_links">
+            <div>
+              <button class="btn_linkedin">
+                <i class="fab fa-linkedin" area-hidden="true"></i> Sign in with
+                Linkedin
+              </button>
+            </div>
+            <div>
+              <button class="btn_google">
+                <img
+                  src="https://static.instahyre.com/images/icons/google-signin.png"
+                  alt=""
+                />
+                Sign in with Google
+              </button>
+            </div>
+          </div>
+
+          <!-- line  -->
+          <fieldset class="line">
+            <legend>OR</legend>
+          </fieldset>
+
+          <!-- form  -->
+          <form onsubmit="add_user(event)">
+            <div>
+              <label for="name">Your Name</label>
+              <input type="text" id="signup_name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="signup_email" name="email" required />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="signup_password"
+                name="password"
+                required
+              />
+            </div>
+
+            <input type="checkbox" name="agree" id="agree" required />
+            <p class="agree_p">
+              I agree to the
+              <span><a href="" class="link_tag">Terms of Service</a></span>
+              and <span><a href="" class="link_tag"> Privacy Policy</a></span
+              >. I agree to receive the default email notifications, which I can
+              unsubscribe from at any time.
+            </p>
+
+            <div class="sub">
+              <input type="submit" value="Get Started" />
+            </div>
+
+            <p>
+              Already have an account?
+              <a href="../assets/login.html" class="link_tag">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Content divs  -->
+      <div id="content_divs">
+        <div>
+          <h3>Who is Instahyre for?</h3>
+          <p>
+            Instahyre is for folks who are looking to get hired at the best tech
+            companies in India, without being spammed for irrelevant jobs on
+            traditional job boards.
+          </p>
+        </div>
+        <div>
+          <h3>What kind of jobs can I find on Instahyre?</h3>
+          <p>
+            You can currently use Instahyre to find jobs in Software
+            Engineering, Data Science, Product Management, Design, Marketing,
+            Sales, Operations and HR.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer">
+      <div id="ins_footer">
+        <div>
+          <p>Jobs by Location</p>
+          <a href=""><p>Jobs by Bangalore</p></a>
+          <a href=""><p>Jobs by Delhi / NCR</p></a>
+          <a href=""><p>Jobs by Hyderabad</p></a>
+          <a href=""><p>Jobs by Mumbai</p></a>
+        </div>
+        <div>
+          <p>Jobs by Function</p>
+          <a href=""><p>Software Engineering Jobs</p></a>
+          <a href=""><p>Technical Management Jobs</p></a>
+          <a href=""><p>Marketing Jobs</p></a>
+          <a href=""><p>Sales Jobs</p></a>
+        </div>
+        <div>
+          <p>For Employers</p>
+          <a href=""><p>Post Your Jobs</p></a>
+          <a href=""><p>Success Stories</p></a>
+        </div>
+        <div>
+          <p>Instahyre</p>
+          <a href=""><p>About</p></a>
+          <a href=""><p>Privacy</p></a>
+          <a href=""><p>Terms</p></a>
+        </div>
+        <div>
+          <p>Connect</p>
+          <a href=""><p>Help Center</p></a>
+          <a href=""><p>Blog</p></a>
+          <div id="img_link">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div id="main">
+      <div class="navbar">
+        <div class="navbar_heading">
+          <a href="">Instahyre</a>
+        </div>
+        <div class="navbar_links">
+          <ul>
+            <li><a href="">INVITE FRIENDS</a></li>
+            <li><a href="">CUSTOMERS</a></li>
+            <li><a href="">LOGIN</a></li>
+            <li><a href="../assets/signup.html">SIGNUP</a></li>
+            <li><a href="">EMPLOYERS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Content  -->
+    <div id="login">
+      <div id="login_details">
+        <h2>Login</h2>
+        <p>
+          Don't have an account?
+          <span
+            ><a href="../assets/signup.html" class="link_tag">Sign Up</a></span
+          >
+        </p>
+
+        <!-- login links  -->
+        <div id="login_links">
+          <div>
+            <button class="btn_linkedin">
+              <i class="fab fa-linkedin" area-hidden="true"></i> Sign in with
+              Linkedin
+            </button>
+          </div>
+          <div>
+            <button class="btn_google">
+              <img
+                src="https://static.instahyre.com/images/icons/google-signin.png"
+                alt=""
+              />
+              Sign in with Google
+            </button>
+          </div>
+        </div>
+
+        <!-- line  -->
+        <fieldset class="line">
+          <legend>OR</legend>
+        </fieldset>
+
+        <form onsubmit="login_user(event)">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="login_email" name="email" required />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="login_password" name="password" />
+          </div>
+          <div>
+            <input type="submit" value="Login" />
+          </div>
+          <a href="" class="link_tag">Forgot password?</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer">
+      <div id="ins_footer">
+        <div>
+          <p>Jobs by Location</p>
+          <a href=""><p>Jobs by Bangalore</p></a>
+          <a href=""><p>Jobs by Delhi / NCR</p></a>
+          <a href=""><p>Jobs by Hyderabad</p></a>
+          <a href=""><p>Jobs by Mumbai</p></a>
+        </div>
+        <div>
+          <p>Jobs by Function</p>
+          <a href=""><p>Software Engineering Jobs</p></a>
+          <a href=""><p>Technical Management Jobs</p></a>
+          <a href=""><p>Marketing Jobs</p></a>
+          <a href=""><p>Sales Jobs</p></a>
+        </div>
+        <div>
+          <p>For Employers</p>
+          <a href=""><p>Post Your Jobs</p></a>
+          <a href=""><p>Success Stories</p></a>
+        </div>
+        <div>
+          <p>Instahyre</p>
+          <a href=""><p>About</p></a>
+          <a href=""><p>Privacy</p></a>
+          <a href=""><p>Terms</p></a>
+        </div>
+        <div>
+          <p>Connect</p>
+          <a href=""><p>Help Center</p></a>
+          <a href=""><p>Blog</p></a>
+          <div id="img_link">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
