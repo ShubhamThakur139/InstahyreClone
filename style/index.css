@@ -1,45 +1,236 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Gotham SSm A","Gotham SSm B";
+    line-height: 1.8;
 }
 
-.main{
-    background-color:#414654;;
+/* Navbar styling  */
+#main {
+    width: 100%;
     height: 50px;
+    background-color: #414654;
+    color: #c5c9cb;
+    position: fixed;
 }
-.navBar{
-    display: flex;
-    width: 70%;
+
+.navbar {
+    width: 80%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
     margin: auto;
-    justify-content: space-between;
-    letter-spacing: 1.5px;
-}
-.navbarLinks a {
-    color: #D7DADC;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: 600;
-    
-}
-.navbarLinks {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_heading a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar_links {
     width: 50%;
+    text-align: right;
 }
 
-.navbarLinks p{
-   margin-left: 6%;
+.navbar_links li {
+    display: inline;
+    list-style: none;
+    margin-left: 2.2%;
 }
 
-.navbarLinks :nth-child(5){
-  background-color: #02BFA0;
-  border-radius: 3px;
-  padding:0.1% 0.8% 0.3% 0.8%;
+.navbar_links li a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 3px;
 }
 
- #white{
+.navbar_links li:last-child a {
+    padding: 1%;
+    background-color: #02bfa0;
     color: white;
+}
+
+/* SignIn */
+
+.SignIn{
+    background-image: url("../images/backimage.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 475px;
+    opacity: 10;
+    display: flex;
+    padding-top: 10%;
+}
+
+.SignInDiv{
+    display: float;
+   padding: 4%;
+   background-color: white;
+}
+
+/* ColabrotedCompinies */
+
+.ColabrotedCompinies{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+   
+}
+
+.ColabrotedCompinies p{
+    font-size: 25px;
+   padding-top: 3%;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.companiesImage{
+    margin-top: 2%;
+    width: 70%;
+    height: 290px;
+    margin-bottom: 2%;
+  
+}
+
+/* bullet Points About Instahyre */
+.bulletPointsMainDiv{
+    width: 100%;
+    margin: auto;
+    background-color: #f6f7f9;
+    padding-top: 2%;
+}
+
+.bulletPointsDiv{
+width: 45%;
+margin: auto;
+}
+
+.bulletPointsDiv p:nth-child(1){
+    font-size: 16px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A5056;
+}
+
+.bulletPointsDiv p:nth-child(2){
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A5056;
+    font-size: 14px;
+}
+
+.bulletPoints {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 4%;
+}
+
+.bulletPoints div:nth-child(1){
+    width: 60%;
  }
 
+ .bulletPoints div:nth-child(2){
+    text-align: center;
+    margin: auto;
+    padding-left: 15%;
+ }
+
+ /* Testimonials */
+ .testimonialsMainDiv{
+     width: 100%;
+     background-color: #f6f7f9;
+   
+ }
+ .testimonials{
+     width: 60%;
+     margin: auto;
+     display: flex;
+     padding-top: 3%;
+ }
+
+.thoughts{
+    width: 70%;
+    padding: 6%;
+    background-color: #F4F3EC;
+    border-radius: 6px;
+    margin: auto;
+    height: 50%;
+}
+.about{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 25% 75%;
+  
+    margin: auto;
+    margin-top: 5%;
+}
+.about img{
+   border-radius: 50%;
+   width: 95%;
+}
+.about h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A5056;
+    padding-top: 10%;
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: 600;
+ }
+ .about p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A5056;
+    margin-left: 2%;
+ }
+
+
+/* footer styling  */
+
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #f6f7f9;
+    border-top: 1px solid #a8a8a87c;
+    padding: 3% 0;
+}
+
+#ins_footer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ins_footer>div>p:first-child {
+    margin-bottom: 2%;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.822); */
+    color: rgb(75, 75, 75);
+}
+
+#ins_footer>div>p:not(:first-child) {
+    color: gray;
+    line-height: 22px;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+}
+
+#img_link {
+    margin-top: 6%;
+}
+
+#img_link>a {
+    margin-right: 6%;
+}
+
+#img_link>a i {
+    color: #8A8A8A;
+    font-size: 22px;
+}
