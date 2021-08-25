@@ -5,6 +5,7 @@
     font-family: 'gotha';
 }
 
+
 /* Navbar styling  */
 #main {
     width: 100%;
@@ -37,7 +38,7 @@
 .navbar_links li {
     display: inline;
     list-style: none;
-    margin-left: 2.2%;
+    margin-left: 3%;
 }
 
 .navbar_links li a {
@@ -56,81 +57,57 @@
     color: white;
 }
 
+/* Navbar styling end */
 
-/* Login styling  */
-#login {
-    padding: 3% 0;
-    background-color: #f6f7f9;
-    width: 100%;
-    height: 650px;
-}
-
-#login_details {
-    width: 24.5%;
-    height: 100%;
+/* Sign up Styling start */
+#signup {
+    padding: 3% 1%;
+    width: 72%;
     margin: auto;
+    height: 1100px;
     text-align: center;
+    background-color: #fff;
 }
 
-#login h2 {
-    margin: 3% 0;
-    margin-bottom: 5%;
+#signup h1,
+p {
     color: #40454A;
+    margin: 1.5% 0;
 }
 
-#login p {
-    color: #4A5056;
-    margin-bottom: 10%;
+#signup h1 {
+    font-size: 26px;
 }
 
-/* login links button  styling*/
-#login_links div button {
+#signup p a {
+    text-decoration: none;
+    color: #0090CC;
+}
+
+/* signup div styling  start*/
+#signup_divs {
+    margin: 6% 4% 0 0 !important;
     width: 100%;
-    background-color: #0B84BD;
-    color: white;
-    margin: 3% 0;
-    border-radius: 3px;
-    text-align: center;
-    outline: none;
-    border: none;
-    position: relative;
-    height: 45px;
-    font-size: 16px;
-    overflow: hidden;
-    cursor: pointer;
+    margin: auto;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
 }
 
-#login_links div button i {
-    position: absolute;
-    left: 3px;
-    font-size: 40px;
-    top: 2px;
-
+#left_div {
+    padding: 2% 1%;
+    width: 48%;
+    border-right: 1px solid #EdEdEd;
+    height: 98%;
+    /* border: 1px solid blue; */
 }
 
-#login_links div:last-child button {
-    background-color: #dd4b39;
-}
-
-#login_links div:last-child button img {
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    height: 43px;
-    object-fit: cover;
-    width: 42px;
-    /* font-size: 40px; */
-}
-
-
-.btn_linkedin:hover {
-    background-color: #005983 !important;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn_google:hover {
-    background-color: #c23321 !important;
-    border-color: rgba(0, 0, 0, 0.2);
+#right_div {
+    padding: 2% 5%;
+    width: 50%;
+    height: 98%;
+    /* border: 1px solid blue; */
 }
 
 /* line styling  */
@@ -147,6 +124,7 @@ legend {
     color: #9e9d9d;
 }
 
+/* form styling */
 form>div {
     text-align: left;
 }
@@ -154,7 +132,8 @@ form>div {
 form>div label {
     width: 100%;
     color: rgb(88, 88, 88);
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 550;
 }
 
 form>div input {
@@ -175,7 +154,23 @@ form>div input:focus {
     border: 1px solid rgba(0, 0, 255, 0.514);
 }
 
+form>div:nth-child(4) input {
+    height: 15px;
+    display: inline !important;
+}
+
+form>div:nth-child(4) label {
+    display: inline !important;
+    font-weight: 400;
+}
+
+form .sub {
+    text-align: center;
+}
+
 form input[type='submit'] {
+    width: 55%;
+    /* margin: auto !important; */
     background-color: #02BFA0;
     border: none;
     color: white;
@@ -193,6 +188,35 @@ form input[type='submit']:hover {
     text-decoration: none;
     color: #0090CC;
 }
+
+
+/* signup div styling  end*/
+
+/* Content divs styling  */
+#content_divs {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+}
+
+#content_divs>div {
+    padding: 2%;
+    width: 49%;
+}
+
+#content_divs>div h3 {
+    margin: 3% 0;
+    color: #4A5056;
+}
+
+#content_divs>div p {
+    line-height: 23.4px;
+    color: #4A5056;
+}
+
+/* Sign up Styling end */
 
 /* footer styling  */
 #footer {
