@@ -67,7 +67,7 @@
           <legend>OR</legend>
         </fieldset>
 
-        <form>
+        <form onsubmit="login_user(event)">
           <div>
             <label for="email">Email</label>
             <input type="email" id="login_email" name="email" required />
@@ -124,5 +124,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/login.js"></script>
   </body>
 </html>

@@ -297,7 +297,6 @@ form input[type='submit']:hover {
 #ins_footer>div>p:first-child {
     margin-bottom: 2%;
     font-weight: 500;
-    /* color: rgb(75, 75, 75); */
     color: #555 !important;
 }
 

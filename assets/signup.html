@@ -66,10 +66,10 @@
           </fieldset>
 
           <!-- form  -->
-          <form>
+          <form onsubmit="add_user(event)">
             <div>
               <label for="name">Your Name</label>
-              <input type="text" id="your_name" name="name" />
+              <input type="text" id="signup_name" name="name" required />
             </div>
             <div>
               <label for="email">Email</label>
@@ -77,10 +77,15 @@
             </div>
             <div>
               <label for="password">Password</label>
-              <input type="password" id="signup_password" name="password" />
+              <input
+                type="password"
+                id="signup_password"
+                name="password"
+                required
+              />
             </div>
 
-            <input type="checkbox" name="agree" id="agree" />
+            <input type="checkbox" name="agree" id="agree" required />
             <p class="agree_p">
               I agree to the
               <span><a href="" class="link_tag">Terms of Service</a></span>
@@ -162,5 +167,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/signup.js"></script>
   </body>
 </html>
