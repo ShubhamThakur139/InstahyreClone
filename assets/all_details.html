@@ -34,11 +34,149 @@
 
     <!-- content part  -->
     <div id="main2">
-      <div id="content">
-        <h1>Add Your Skills</h1>
-        <p>Hi Name! We just need some quick info about your ideal job.</p>
-        <hr />
-      </div>
+      <form>
+        <div id="content">
+          <!-- 1 section  -->
+          <h1>Add Your Skills</h1>
+          <p>Hi Name! We just need some quick info about your ideal job.</p>
+          <hr />
+
+          <div>
+            <!-- working  -->
+            <div>
+              <h4>Are you a working professional or fresher?</h4>
+              <input type="radio" name="working" id="professional" />
+              <label for="professional">I am a working professional</label>
+              <br />
+              <input type="radio" name="working" id="fresher" />
+              <label for="fresher">I am a fresher</label>
+            </div>
+            <!-- internships  -->
+            <div>
+              <h4>
+                How many years of experience do you have? Don't include
+                internships.
+              </h4>
+              <input type="number" placeholder="e.g. 3" />
+            </div>
+            <!-- current role:  -->
+            <div>
+              <h4>Select your current role:</h4>
+              <select name="" id="">
+                <option value="">Full-Stack Development</option>
+                <option value="">Frontend Enginner</option>
+                <option value="">Backend Enginner</option>
+                <option value="">Software Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 2nd section  -->
+          <h1>Specify job preferences</h1>
+          <p>so we can find highly relevant jobs for you</p>
+          <hr />
+          <div>
+            <!-- currently located  -->
+            <div>
+              <h4>Where are you currently located?</h4>
+              <select name="" id="city" class="wide">
+                <option value="">Bangalore</option>
+                <option value="">Gurgaon</option>
+                <option value="">Delhi</option>
+              </select>
+            </div>
+
+            <!-- open to work  -->
+            <div>
+              <h4>Where are you open to working?</h4>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="wide"
+                placeholder="e.g. Anywhere in india, Bangalore"
+              />
+            </div>
+            <!-- minimum salary -->
+            <div>
+              <h4>What is the minimum salary you will consider?</h4>
+              <input type="text" name="" id="" placeholder="e.g. 5LPA-7LPA" />
+            </div>
+            <!-- when you join  -->
+            <div>
+              <h4>When you can join the company if selected?</h4>
+              <select name="" id="duration">
+                <option value="">Immediately</option>
+                <option value="">within 15 days</option>
+                <option value="">within 2 months</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 3rd section  -->
+          <h1>Upload resume</h1>
+          <p>An updated resume is key to being shortlisted</p>
+          <hr />
+          <div>
+            <div>
+              <h4>
+                Have you done any internships?If yes, enter the company names:
+              </h4>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="wide"
+                placeholder="e.g. Facebook, Google"
+              />
+            </div>
+
+            <div>
+              <h4>Enter your educational qualifications:</h4>
+              <div class="edu">
+                <select name="" id="">
+                  <option value="">Course</option>
+                  <option value="">BCA</option>
+                  <option value="">BBA</option>
+                  <option value="">MCA</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Specialization</option>
+                  <option value="">Computer Science</option>
+                  <option value="">Pharmacutical</option>
+                  <option value="">MCA</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Year</option>
+                  <option value="">2021</option>
+                  <option value="">2020</option>
+                  <option value="">2019</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="wide"
+                placeholder="University / Institute"
+              />
+            </div>
+            <div>
+              <h4>
+                If you don't have an updated resume, we strongly suggest you
+                create one. <br />
+                Otherwise upload a PDF of your updated LinkedIn profile.
+              </h4>
+              <input type="file" name="Click" id="" value="Click" />
+            </div>
+          </div>
+
+          <hr />
+          <div>
+            <input type="submit" value="Next" />
+          </div>
+        </div>
+      </form>
     </div>
 
     <!-- Footer -->
@@ -81,5 +219,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/all_details.js"></script>
   </body>
 </html>

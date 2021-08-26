@@ -4,7 +4,10 @@ if (all_users == null) {
   all_users = [];
 }
 
-let count = 0;
+let id = JSON.parse(localStorage.getItem("unique_id"));
+if (id === null) {
+  id = 1000;
+}
 
 //check whether email is already exist or not
 function isEmailExist(email) {
@@ -21,7 +24,8 @@ function isEmailExist(email) {
 }
 
 //function construtor to create user info
-function UserInfo(name, email, password, agree) {
+function UserInfo(id, name, email, password, agree) {
+  this.id = id;
   this.name = name;
   this.email = email;
   this.password = password;
@@ -44,7 +48,8 @@ function add_user(e) {
     return;
   }
 
-  let user = new UserInfo(user_name, user_email, user_password, user_agree);
+  let user = new UserInfo(id, user_name, user_email, user_password, user_agree);
+  localStorage.setItem("unique_id", ++id);
 
   all_users.push(user);
   localStorage.setItem("All_Valid_Users", JSON.stringify(all_users));
