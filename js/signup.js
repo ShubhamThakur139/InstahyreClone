@@ -4,6 +4,8 @@ if (all_users == null) {
   all_users = [];
 }
 
+let count = 0;
+
 //check whether email is already exist or not
 function isEmailExist(email) {
   let isTrue = false;
@@ -48,5 +50,5 @@ function add_user(e) {
   localStorage.setItem("All_Valid_Users", JSON.stringify(all_users));
 
   alert("User SignUp Successfully");
-  location.href = "../assets/login.html";
+  location.href = "../assets/all_details.html";
 }

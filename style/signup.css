@@ -92,22 +92,19 @@ p {
     height: 70%;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 
 #left_div {
     padding: 2% 1%;
     width: 48%;
     border-right: 1px solid #EdEdEd;
-    height: 98%;
-    /* border: 1px solid blue; */
+    height: 78%;
 }
 
 #right_div {
     padding: 2% 5%;
     width: 50%;
     height: 98%;
-    /* border: 1px solid blue; */
 }
 
 
@@ -147,7 +144,6 @@ p {
     height: 43px;
     object-fit: cover;
     width: 42px;
-    /* font-size: 40px; */
 }
 
 
@@ -189,7 +185,7 @@ form>div label {
 }
 
 form>div input {
-    padding: 0 2%;
+    padding: 0 4%;
     color: rgb(65, 64, 64);
     font-size: 14px;
     height: 38px;
@@ -256,7 +252,6 @@ form input[type='submit']:hover {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 
 #content_divs>div {
@@ -276,7 +271,7 @@ form input[type='submit']:hover {
 
 /* Sign up Styling end */
 
-/* footer styling  */
+
 /* footer styling  */
 #footer {
     width: 100%;
