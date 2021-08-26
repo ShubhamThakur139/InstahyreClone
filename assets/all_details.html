@@ -45,10 +45,21 @@
             <!-- working  -->
             <div>
               <h4>Are you a working professional or fresher?</h4>
-              <input type="radio" name="working" id="professional" required />
+              <input
+                type="radio"
+                name="working"
+                id="professional"
+                value="I am a working professional"
+                required
+              />
               <label for="professional">I am a working professional</label>
               <br />
-              <input type="radio" name="working" id="fresher" />
+              <input
+                type="radio"
+                name="working"
+                id="fresher"
+                value="I am a fresher"
+              />
               <label for="fresher">I am a fresher</label>
             </div>
             <!-- internships  -->
@@ -57,18 +68,18 @@
                 How many years of experience do you have? Don't include
                 internships.
               </h4>
-              <input type="number" placeholder="e.g. 3" required />
+              <input type="number" id="exp" placeholder="e.g. 3" required />
             </div>
             <!-- current role:  -->
             <div>
               <h4>Select your current role:</h4>
-              <select name="" id="" required>
-                <option value="">Full-Stack Development</option>
-                <option value="">Frontend Enginner</option>
-                <option value="">Backend Enginner</option>
-                <option value="">Software Developer</option>
-                <option value="">Backend Developer</option>
-                <option value="">Java Developer</option>
+              <select name="" id="job_role" required>
+                <option value="fsd">Full-Stack Development</option>
+                <option value="fe">Frontend Enginner</option>
+                <option value="be">Backend Enginner</option>
+                <option value="sd">Software Developer</option>
+                <option value="bd">Backend Developer</option>
+                <option value="jd">Java Developer</option>
               </select>
             </div>
           </div>
@@ -82,12 +93,12 @@
             <div>
               <h4>Where are you currently located?</h4>
               <select name="" id="city" class="wide" required>
-                <option value="">Bangalore</option>
-                <option value="">Hyderabad</option>
-                <option value="">Gurgaon</option>
-                <option value="">Delhi</option>
-                <option value="">Chennai</option>
-                <option value="">Work From Home</option>
+                <option value="bang">Bangalore</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="gurg">Gurgaon</option>
+                <option value="del">Delhi</option>
+                <option value="chn">Chennai</option>
+                <option value="wfh">Work From Home</option>
               </select>
             </div>
 
@@ -97,7 +108,7 @@
               <input
                 type="text"
                 name=""
-                id=""
+                id="open_work"
                 class="wide"
                 placeholder="e.g. Anywhere in india, Bangalore"
                 required
@@ -109,7 +120,7 @@
               <input
                 type="text"
                 name=""
-                id=""
+                id="min_sal"
                 placeholder="e.g. 5LPA-7LPA"
                 required
               />
@@ -118,10 +129,10 @@
             <div>
               <h4>When you can join the company if selected?</h4>
               <select name="" id="duration" required>
-                <option value="">Immediately</option>
-                <option value="">within 15 days</option>
-                <option value="">within 2 months</option>
-                <option value="">within 3 months</option>
+                <option value="imm">Immediately</option>
+                <option value="with_15">within 15 days</option>
+                <option value="with_2">within 2 months</option>
+                <option value="with_3">within 3 months</option>
               </select>
             </div>
           </div>
@@ -138,7 +149,7 @@
               <input
                 type="text"
                 name=""
-                id=""
+                id="int_comp_name"
                 class="wide"
                 placeholder="e.g. Facebook, Google"
                 required
@@ -148,36 +159,36 @@
             <div>
               <h4>Enter your educational qualifications:</h4>
               <div class="edu">
-                <select name="" id="" required>
+                <select name="" id="degree" required>
                   <option value="">Course</option>
-                  <option value="BCA">BCA</option>
-                  <option value="BBA">BBA</option>
-                  <option value="MCA">MCA</option>
-                  <option value="MCA">MBA</option>
-                  <option value="MCA">B.Tech</option>
-                  <option value="MCA">M.Tech</option>
+                  <option value="bca">BCA</option>
+                  <option value="bba">BBA</option>
+                  <option value="mca">MCA</option>
+                  <option value="mba">MBA</option>
+                  <option value="btech">B.Tech</option>
+                  <option value="mtech">M.Tech</option>
                 </select>
-                <select name="" id="" required>
+                <select name="" id="course_spe" required>
                   <option value="">Specialization</option>
-                  <option value="Computer Science">Computer Science</option>
-                  <option value="">Human Resources</option>
-                  <option value="Pharmacutical">Devops</option>
-                  <option value="">Project Manager</option>
-                  <option value="">Aeronatics Engineer</option>
+                  <option value="cs">Computer Science</option>
+                  <option value="hr">Human Resources</option>
+                  <option value="devops">Devops</option>
+                  <option value="project">Project Manager</option>
+                  <option value="aerengin">Aeronatics Engineer</option>
                 </select>
-                <select name="" id="" required>
+                <select name="" id="passing_year" required>
                   <option value="">Year</option>
-                  <option value="">2021</option>
-                  <option value="">2020</option>
-                  <option value="">2019</option>
-                  <option value="">2018</option>
-                  <option value="">2017</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
                 </select>
               </div>
               <input
                 type="text"
                 name=""
-                id="university_name"
+                id="uni_name"
                 class="wide"
                 placeholder="University / Institute"
                 required
@@ -189,7 +200,7 @@
                 create one. <br />
                 Otherwise upload a PDF of your updated LinkedIn profile.
               </h4>
-              <input type="file" name="Click" id="" required />
+              <input type="file" name="Click" id="resume" required />
             </div>
           </div>
 
@@ -242,6 +253,6 @@
       </div>
     </div>
 
-    <script src="../js/all_details.js"></script>
+    <script src="../js/signup.js"></script>
   </body>
 </html>
