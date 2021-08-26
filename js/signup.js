@@ -56,4 +56,10 @@ function add_user(e) {
 
   alert("User SignUp Successfully");
   location.href = "../assets/all_details.html";
+
+  function add_details(e) {
+    e.preventDefault();
+    let working = document.getElementsByName("working").id;
+    console.log(working);
+  }
 }
