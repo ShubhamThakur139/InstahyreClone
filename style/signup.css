@@ -101,6 +101,70 @@ p {
     height: 78%;
 }
 
+/* left div testimonial  */
+.testimonials {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.testimonials>div {
+    margin: 6% 0;
+}
+
+.thoughts {
+    width: 75%;
+    padding: 4% 2%;
+    background-color: #F4F3EC;
+    border-radius: 6px;
+    margin: auto;
+    height: 55%;
+    color: #4A5056;
+    text-align: center;
+}
+
+.thoughts p {
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.about>div:first-child {
+    width: 25%;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about>div:last-child {
+    width: 50%;
+}
+
+.about>div:last-child h3 {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.about>div:last-child p {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+
+/* right div styling  */
 #right_div {
     padding: 2% 5%;
     width: 50%;

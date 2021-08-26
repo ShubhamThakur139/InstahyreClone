@@ -34,7 +34,7 @@
 
     <!-- content part  -->
     <div id="main2">
-      <form>
+      <form onsubmit="add_user_data(event)">
         <div id="content">
           <!-- 1 section  -->
           <h1>Add Your Skills</h1>
@@ -45,7 +45,7 @@
             <!-- working  -->
             <div>
               <h4>Are you a working professional or fresher?</h4>
-              <input type="radio" name="working" id="professional" />
+              <input type="radio" name="working" id="professional" required />
               <label for="professional">I am a working professional</label>
               <br />
               <input type="radio" name="working" id="fresher" />
@@ -57,12 +57,12 @@
                 How many years of experience do you have? Don't include
                 internships.
               </h4>
-              <input type="number" placeholder="e.g. 3" />
+              <input type="number" placeholder="e.g. 3" required />
             </div>
             <!-- current role:  -->
             <div>
               <h4>Select your current role:</h4>
-              <select name="" id="">
+              <select name="" id="" required>
                 <option value="">Full-Stack Development</option>
                 <option value="">Frontend Enginner</option>
                 <option value="">Backend Enginner</option>
@@ -79,7 +79,7 @@
             <!-- currently located  -->
             <div>
               <h4>Where are you currently located?</h4>
-              <select name="" id="city" class="wide">
+              <select name="" id="city" class="wide" required>
                 <option value="">Bangalore</option>
                 <option value="">Gurgaon</option>
                 <option value="">Delhi</option>
@@ -95,17 +95,24 @@
                 id=""
                 class="wide"
                 placeholder="e.g. Anywhere in india, Bangalore"
+                required
               />
             </div>
             <!-- minimum salary -->
             <div>
               <h4>What is the minimum salary you will consider?</h4>
-              <input type="text" name="" id="" placeholder="e.g. 5LPA-7LPA" />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="e.g. 5LPA-7LPA"
+                required
+              />
             </div>
             <!-- when you join  -->
             <div>
               <h4>When you can join the company if selected?</h4>
-              <select name="" id="duration">
+              <select name="" id="duration" required>
                 <option value="">Immediately</option>
                 <option value="">within 15 days</option>
                 <option value="">within 2 months</option>
@@ -128,25 +135,26 @@
                 id=""
                 class="wide"
                 placeholder="e.g. Facebook, Google"
+                required
               />
             </div>
 
             <div>
               <h4>Enter your educational qualifications:</h4>
               <div class="edu">
-                <select name="" id="">
+                <select name="" id="" required>
                   <option value="">Course</option>
-                  <option value="">BCA</option>
-                  <option value="">BBA</option>
-                  <option value="">MCA</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BBA">BBA</option>
+                  <option value="MCA">MCA</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="" required>
                   <option value="">Specialization</option>
-                  <option value="">Computer Science</option>
-                  <option value="">Pharmacutical</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Pharmacutical">Pharmacutical</option>
                   <option value="">MCA</option>
                 </select>
-                <select name="" id="">
+                <select name="" id="" required>
                   <option value="">Year</option>
                   <option value="">2021</option>
                   <option value="">2020</option>
@@ -156,9 +164,10 @@
               <input
                 type="text"
                 name=""
-                id=""
+                id="university_name"
                 class="wide"
                 placeholder="University / Institute"
+                required
               />
             </div>
             <div>
@@ -167,7 +176,7 @@
                 create one. <br />
                 Otherwise upload a PDF of your updated LinkedIn profile.
               </h4>
-              <input type="file" name="Click" id="" value="Click" />
+              <input type="file" name="Click" id="" required />
             </div>
           </div>
 
