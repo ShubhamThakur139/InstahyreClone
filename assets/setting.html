@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Instahyre</title>
+    <link rel="stylesheet" href="../style/setting.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.instahyre.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div id="main">
+      <div class="navbar">
+        <div class="navbar_heading">
+          <a href="">Instahyre</a>
+        </div>
+        <div class="navbar_links">
+          <ul>
+            <li><a href="">GO PREMIUM</a></li>
+            <li><a href="">ACTIVITY</a></li>
+            <li><a href="">OPPORTUNITIES</a></li>
+            <li><a href="../assets/profile.html">PROFILE</a></li>
+            <li class="active">
+              <a href="../assets/setting.html">SETTINGS</a>
+            </li>
+            <li><a href="../assets/signout.html">SIGN OUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content part  -->
+    <div id="main2">
+      <div id="inside">
+        <h1>Account Settings</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" readonly />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" readonly />
+        </div>
+        <div>
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="alt_phone">Alternative Phone</label>
+          <input type="tel" id="alt_phone" name="alt_phone" required />
+        </div>
+        <p class="agree_p">
+          Want to change how you receive job alert notifications?
+          <a href="" class="link_tag">Click here</a>
+        </p>
+        <div class="sub">
+          <input type="submit" value="Save Changes" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div id="ins_footer">
+        <div>
+          <p>Jobs by Location</p>
+          <a href=""><p>Jobs by Bangalore</p></a>
+          <a href=""><p>Jobs by Delhi / NCR</p></a>
+          <a href=""><p>Jobs by Hyderabad</p></a>
+          <a href=""><p>Jobs by Mumbai</p></a>
+        </div>
+        <div>
+          <p>Jobs by Function</p>
+          <a href=""><p>Software Engineering Jobs</p></a>
+          <a href=""><p>Technical Management Jobs</p></a>
+          <a href=""><p>Marketing Jobs</p></a>
+          <a href=""><p>Sales Jobs</p></a>
+        </div>
+        <div>
+          <p>For Employers</p>
+          <a href=""><p>Post Your Jobs</p></a>
+          <a href=""><p>Success Stories</p></a>
+        </div>
+        <div>
+          <p>Instahyre</p>
+          <a href=""><p>About</p></a>
+          <a href=""><p>Privacy</p></a>
+          <a href=""><p>Terms</p></a>
+        </div>
+        <div>
+          <p>Connect</p>
+          <a href=""><p>Help Center</p></a>
+          <a href=""><p>Blog</p></a>
+          <div id="img_link">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let data = JSON.parse(localStorage.getItem("userLogged"));
+      let user_info = JSON.parse(localStorage.getItem("All_Valid_Users"));
+
+      user_info.forEach((element) => {
+        if (element.id === data[1].id) {
+          // console.log(element);
+          document.getElementById("name").value = element.name;
+          document.getElementById("email").value = element.email;
+        }
+      });
+    </script>
+  </body>
+</html>
