@@ -1,0 +1,249 @@
+
+/* Opportunities Page */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Gotham SSm A","Gotham SSm B"; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
+/* Navbar styling  */
+#main {
+    width: 100%;
+    height: 50px;
+    background-color: #414654;
+    color: #c5c9cb;
+    position: fixed; 
+}
+
+.navbar {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarHeading a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbarLlinks {
+    width: 50%;
+    text-align: right;
+}
+
+.navbarLlinks li {
+    display: inline;
+    list-style: none;
+    margin-left: 2.2%;
+}
+
+.navbarLlinks li a:hover {
+    color: white;
+}
+
+.navbarLlinks li a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.navbarLlinks li.active a {
+    padding: 1%;
+    background-color: #02bfa0;
+    color: white !important;
+}
+.height{
+    height: 300px;
+    width: 100%;
+}
+.opportunities{
+    background-color: #f6f7f9;
+    padding-bottom: 3%;
+}
+
+.countOfJobs{
+    background-color: #4C5365;
+    padding: 50px 10px 40px 10px;
+    text-align: center;
+}
+
+.countOfJobs p{
+    color: white;
+    font-size: 25px;
+}
+
+.JobsAndFilter{
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 24% 76%;
+    grid-gap: 3%;
+}
+
+.filterAndAdds{
+    margin-top: 18%;
+}
+
+.filterAndAdds h4{
+    margin-bottom: 3%;
+    color: #40454A;
+}
+
+.filterAndAdds div{
+    background-color: white;
+    margin-top: 12%;
+    padding: 5%;
+}
+.filterAndAdds label{
+    color: #555A61;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.filterAndAdds div:nth-child(1) p{
+   color: #8A8A8A;
+   margin-bottom: 6%;
+   font-size: 13px;
+}
+
+.jobPost{
+    display: grid;
+    grid-template-columns: 10% 68% 20%;
+    margin-top: 3%;
+    grid-gap: 1%;
+    background-color: white;
+}
+.jobPost p:nth-child(2){
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+
+
+#availableJobs p{
+    color: #4A5056;
+    font-size: 14px;
+}
+
+
+#availableJobs h3{
+    color: #4A5056;
+    font-size: 16px;
+}
+
+
+.jobPost p:nth-child(3){
+    display: inline;
+    color: #8A8A8A !important;
+}
+.jobPost p:nth-child(4){
+    margin-left: 4%;
+    display: inline;
+    color: #8A8A8A !important;
+}
+.companyIcon{
+    margin: auto;
+    margin-top: 7%;
+    padding: 9%;
+}
+
+.companyIcon img{
+ width: 100%;
+}
+
+.description{
+    padding: 2%;
+}
+
+.jobDetailButton{
+    text-align: center;
+    margin: auto;
+}
+
+.jobDetailButton button:nth-child(1){
+    background-color: #02BFA0;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 0.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 8px 13px 8px 13px;
+ }
+
+
+ .jobDetailButton button:nth-child(1):hover{
+    background-color: #029A82;
+}
+
+.interestButton{
+    border: none;
+    background-color: white;
+    color: #8A8A8A;
+    font-size: 14px;
+    display: block;
+ }
+
+.interestButton:hover{
+    text-decoration: underline;
+ }
+
+ 
+/* footer styling  */
+
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #f6f7f9;
+    border-top: 1px solid #a8a8a87c;
+    padding: 3% 0;
+}
+
+#insFooter {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#insFooter>div>p:first-child {
+    margin-bottom: 2%;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.822); */
+    color: rgb(75, 75, 75);
+}
+
+#insFooter>div>p:not(:first-child) {
+    color: gray;
+    line-height: 22px;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+}
+
+#imgLink {
+    margin-top: 6%;
+}
+
+#imgLink>a {
+    margin-right: 6%;
+}
+
+#imgLink>a i {
+    color: #8A8A8A;
+    font-size: 22px;
+}
