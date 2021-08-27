@@ -32,7 +32,7 @@
             <li><a href="">OPPORTUNITIES</a></li>
             <li><a href="../assets/login.html">PROFILE</a></li>
             <li><a href="">SETTINGS</a></li>
-            <li><a href="../assets/login.html">SIGN OUT</a></li>
+            <li><a href="../assets/signout.html">SIGN OUT</a></li>
           </ul>
         </div>
       </div>
@@ -45,7 +45,7 @@
           src="https://instahyre-2.s3-ap-south-1.amazonaws.com/media/CACHE/images/images/profile/base/candidate/1897622/db0fae544d/tmpV0JsB7/2ded1f48f91f1b101cddfd356017a8ff.jpg"
           alt=""
         />
-        <h1>Shubham Thakur</h1>
+        <h1 id="user_name"></h1>
       </div>
     </div>
 
@@ -67,18 +67,22 @@
           <div>
             <h4>Job Preferences</h4>
             <hr />
-            <p>Currently located in <strong>Bangalore</strong></p>
-            <p>Only willing to work in <strong>Anywhere in India</strong></p>
-            <p>Minimum salary <strong>Rs. 10.0 LPA</strong></p>
+            <p>Currently located in <strong id="city"></strong></p>
             <p>
-              Can start working <strong>2 months</strong> after accepting offer
+              Only willing to work in
+              <strong id="loc"></strong>
+            </p>
+            <p>Minimum salary Rs. <strong id="sal"></strong></p>
+            <p>
+              Can start working <strong id="join_dur"></strong> after accepting
+              offer
             </p>
           </div>
 
           <div>
             <h4>Skills</h4>
             <hr />
-            <p>Current role is <strong>Full-Stack Development</strong></p>
+            <p>Current role is <strong id="job_role"></strong></p>
             <p>
               Main skills are
               <strong>Data Structures, Java, JavaScript, Python</strong>
@@ -89,19 +93,23 @@
           <div>
             <h4>Internships</h4>
             <hr />
-            <p>3 months Internship in Google</p>
+            <p id="intern"></p>
           </div>
 
           <div>
             <h4>Education</h4>
             <hr />
-            <p>Panjab University, Chandigarh</p>
-            <p>BCA in Computer Science, 2021</p>
+            <p id="uni_name"></p>
+            <p>
+              <strong id="deg_name"></strong> in
+              <strong id="course_speci"></strong> ,
+              <strong id="pass_year"></strong>
+            </p>
           </div>
           <div id="res">
             <h4>Resume</h4>
             <hr />
-            <a href="" class="link_tag">Shubham_Thakur.pdf</a>
+            <a href="" class="link_tag" id="resu" target="_blank"> </a>
             <p>Last updated on Aug 25, 2021 at 17:38:48</p>
           </div>
           <div>
@@ -187,5 +195,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/profile.js"></script>
   </body>
 </html>

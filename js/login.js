@@ -16,8 +16,14 @@ function login_user(e) {
       userExist = true;
       login_email = "";
       login_password = "";
+      localStorage.setItem(
+        "userLogged",
+        JSON.stringify([{ isLogged: true }, element])
+      );
+
       alert(`Login Successfully`);
-      location.href = "../assets/landing_page.html";
+
+      location.href = "../assets/profile.html";
       return;
     }
   });
