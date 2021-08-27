@@ -24,25 +24,29 @@
     align-items: center;
 }
 
-.navbar_heading a {
+.navbarHeading a {
     text-decoration: none;
     color: #c5c9cb;
     font-size: 22px;
     font-weight: 600;
 }
 
-.navbar_links {
+.navbarLlinks {
     width: 50%;
     text-align: right;
 }
 
-.navbar_links li {
+.navbarLlinks li {
     display: inline;
     list-style: none;
     margin-left: 2.2%;
 }
 
-.navbar_links li a {
+.navbarLlinks li a:hover {
+    color: white;
+}
+
+.navbarLlinks li a {
     text-decoration: none;
     color: #c5c9cb;
     font-size: 10px;
@@ -52,10 +56,10 @@
     border-radius: 3px;
 }
 
-.navbar_links li:last-child a {
+.navbarLlinks li.active a {
     padding: 1%;
     background-color: #02bfa0;
-    color: white;
+    color: white !important;
 }
 .height{
     height: 300px;
@@ -93,6 +97,7 @@
    color: #4A5056;
     font-size: 32px;
 } */
+
 
 .SignInDiv a{
     color: #02BFA0;
@@ -309,36 +314,36 @@
     padding: 3% 0;
 }
 
-#ins_footer {
+#insFooter {
     width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
 
-#ins_footer>div>p:first-child {
+#insFooter>div>p:first-child {
     margin-bottom: 2%;
     font-weight: 500;
     /* color: rgba(0, 0, 0, 0.822); */
     color: rgb(75, 75, 75);
 }
 
-#ins_footer>div>p:not(:first-child) {
+#insFooter>div>p:not(:first-child) {
     color: gray;
     line-height: 22px;
     word-spacing: 2px;
     letter-spacing: 0.2px;
 }
 
-#img_link {
+#imgLink {
     margin-top: 6%;
 }
 
-#img_link>a {
+#imgLink>a {
     margin-right: 6%;
 }
 
-#img_link>a i {
+#imgLink>a i {
     color: #8A8A8A;
     font-size: 22px;
 }

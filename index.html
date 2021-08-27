@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/index.css">
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-    crossorigin="anonymous"
-  />
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.instahyre.com/favicon.ico"
+    />
+    <title>Zero Hassle Job Search - Instahyre</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
     <body>
         <!-- Nav BAr -->
         
         <div id="main">
             <div class="navbar">
-              <div class="navbar_heading">
+              <div class="navbarHeading">
                 <a href=""><img src="https://static.instahyre.com/images/logos/logo.png" alt=""></a>
               </div>
-              <div class="navbar_links">
+              <div class="navbarLlinks">
                 <ul>
                   <li><a href="">INVITE FRIENDS</a></li>
                   <li><a href="">CUSTOMERS</a></li>
-                  <li><a href="">LOGIN</a></li>
-                  <li><a href="../assets/signup.html">SIGNUP</a></li>
-                  <li><a href="">EMPLOYERS</a></li>
+                  <li><a href="assets/login.html">LOGIN</a></li>
+                  <li><a href="assets/signup.html">SIGNUP</a></li>
+                  <li class="active"><a href="">EMPLOYERS</a></li>
                 </ul>
               </div>
             </div>
@@ -41,11 +41,11 @@
             <p>Your Dream Job. Now.</p>
               <div id="loginLinks">
                 <div>
-                  <button class="btnLinkedin"><i class="fab fa-linkedin-in" area-hidden="true"></i> Sign in with Linkedin</button>
+                  <button id="SignInWithLinkedIn" class="btnLinkedin"><i class="fab fa-linkedin-in" area-hidden="true"></i> Sign in with Linkedin</button>
                 </div>
                 <div>
-                  <button class="btnGoogle">
-                    <img src="https://static.instahyre.com/images/icons/google-signin.png"alt=""/>Sign in with Google</button>
+                  <button id="SignInWithGoogle" class="btnGoogle">
+                    <img src="https://static.instahyre.com/images/icons/google-signin.png"alt="" />Sign in with Google</button>
                 </div>
               </div>
               <div>
@@ -142,7 +142,7 @@
 
         <!-- footer -->
         <div id="footer">
-            <div id="ins_footer">
+            <div id="insFooter">
               <div>
                 <p>Jobs by Location</p>
                 <p>Jobs by Bangalore</p>
@@ -172,7 +172,7 @@
                 <p>Connect</p>
                 <p>Help Center</p>
                 <p>Blog</p>
-                <div id="img_link">
+                <div id="imgLink">
                   <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
                   <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
                   <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
@@ -182,3 +182,5 @@
           </div>
     </body>
 </html>
+
+<script src="js/index.js"></script>
