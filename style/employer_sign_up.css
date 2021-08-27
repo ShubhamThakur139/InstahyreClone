@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+}
+
+
+/* Navbar styling  */
+#main {
+    /* overflow: hidden; */
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #414654;
+    color: #c5c9cb;
+}
+
+.navbar {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_heading a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar_links {
+    width: 50%;
+    text-align: right;
+}
+
+.navbar_links li {
+    display: inline;
+    list-style: none;
+    margin-left: 3%;
+}
+
+.navbar_links li a {
+    text-decoration: none;
+    color: #c5c9cb;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.navbar_links li:last-child a {
+    padding: 1%;
+    background-color: #02bfa0;
+    color: white;
+}
+
+.navbar_links li.active a {
+    color: white !important;
+}
+
+.navbar_links li a:hover {
+    color: white !important;
+}
+
+/* Navbar styling end */
+
+/* Sign up Styling start */
+#signup {
+    padding: 3% 1%;
+    width: 72%;
+    margin: auto;
+    height: 1100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#signup h1,
+p {
+    color: #40454A;
+    margin: 1.5% 0;
+}
+
+#signup h1 {
+    font-size: 26px;
+}
+
+#signup p a {
+    text-decoration: none;
+    color: #0090CC;
+}
+
+/* signup div styling  start*/
+#signup_divs {
+    margin: 6% 4% 0 0 !important;
+    width: 100%;
+    margin: auto;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left_div {
+    padding: 2% 1%;
+    width: 48%;
+    border-left: 1px solid #EdEdEd;
+    height: 78%;
+}
+
+/* left div testimonial  */
+.testimonials {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.testimonials>div {
+    margin: 6% 0;
+}
+
+.thoughts {
+    width: 75%;
+    padding: 4% 2%;
+    background-color: #F4F3EC;
+    border-radius: 6px;
+    margin: auto;
+    height: 55%;
+    color: #4A5056;
+    text-align: center;
+}
+
+.thoughts p {
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+    margin-top: 5%;
+}
+
+.about>div:first-child {
+    width: 25%;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about>div:last-child {
+    width: 70%;
+    margin-left: 3%;
+    text-align: left;
+}
+
+.about>div:last-child h3 {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.about>div:last-child p {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+
+/* right div styling  */
+#right_div {
+    padding: 2% 5%;
+    width: 50%;
+    height: 98%;
+}
+
+
+/* login links button  styling*/
+#login_links div button {
+    width: 100%;
+    background-color: #0B84BD;
+    color: white;
+    margin: 3% 0;
+    border-radius: 3px;
+    text-align: center;
+    outline: none;
+    border: none;
+    position: relative;
+    height: 45px;
+    font-size: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#login_links div button i {
+    position: absolute;
+    left: 3px;
+    font-size: 40px;
+    top: 2px;
+
+}
+
+.btn_linkedin:hover {
+    background-color: #005983 !important;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* form styling */
+form>div {
+    text-align: left;
+}
+
+form>div label {
+    width: 100%;
+    color: rgb(88, 88, 88);
+    font-size: 17px;
+    font-weight: 550;
+    word-spacing: 0.7px;
+}
+
+form>div input[type='text'],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    padding: 0 4%;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+    height: 38px;
+    letter-spacing: 0.6px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(160, 160, 160, 0.438);
+    width: 100%;
+    border-radius: 3px;
+}
+
+.custom>label:first-child {
+    display: block;
+    margin-bottom: 3%;
+}
+
+.custom>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.custom>div:last-child {
+    margin-bottom: 10px;
+}
+
+.custom>div label {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+form>div input:focus {
+    border: 1px solid #0090CC;
+}
+
+form>input {
+    margin-top: 7px;
+    float: left;
+    margin-right: 8px;
+}
+
+form .agree_p {
+    letter-spacing: 0.2px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+    line-height: 24px;
+    text-align: left !important;
+}
+
+form .sub {
+    text-align: center;
+    margin-top: 4%;
+}
+
+form input[type='submit'] {
+    width: 55%;
+    background-color: #02BFA0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    font-weight: 500;
+    border-bottom: 3px solid #0298A2;
+}
+
+form input[type='submit']:hover {
+    background-color: #04aa8e;
+}
+
+.link_tag {
+    text-decoration: none;
+    color: #0090CC;
+}
+
+.link_tag:hover {
+    color: #23527C !important;
+    text-decoration: underline !important;
+}
+
+/* signup div styling  end*/
+
+/* Content divs styling  */
+#content_divs {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+#content_divs>div {
+    padding: 2%;
+    width: 49%;
+}
+
+#content_divs>div h3 {
+    margin: 3% 0;
+    color: #4A5056;
+}
+
+#content_divs>div p {
+    line-height: 23.4px;
+    color: #4A5056;
+}
+
+/* Sign up Styling end */
+
+
+/* footer styling  */
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    border-top: 1px solid #a8a8a87c;
+    padding: 3% 0;
+}
+
+#ins_footer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#ins_footer>div>p:first-child {
+    margin-bottom: 2%;
+    font-weight: 500;
+    color: #555 !important;
+}
+
+#ins_footer>div>a:not(:first-child) {
+    text-decoration: none;
+}
+
+#ins_footer>div>a:not(:first-child) p {
+
+    color: #8a8a8a !important;
+}
+
+#ins_footer>div>p:not(:first-child) {
+    line-height: 22px;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+}
+
+#ins_footer a:hover {
+    text-decoration: underline !important;
+}
+
+#img_link {
+    margin-top: 6%;
+}
+
+#img_link>a {
+    margin-right: 5%;
+}
+
+#img_link>a i {
+    color: #8A8A8A;
+    font-size: 22px;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Sign Up - Instahyre</title>
+    <link rel="stylesheet" href="../style/employer_sign_up.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.instahyre.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div id="main">
+      <div class="navbar">
+        <div class="navbar_heading">
+          <a href="">Instahyre</a>
+        </div>
+        <div class="navbar_links">
+          <ul>
+            <li><a href="">INVITE FRIENDS</a></li>
+            <li><a href="">CUSTOMERS</a></li>
+            <li><a href="../assets/login.html">LOGIN</a></li>
+            <li class="active"><a href="">SIGNUP</a></li>
+            <li><a href="">EMPLOYERS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Part  -->
+    <div id="signup">
+      <h1>Ready to hire with less effort?</h1>
+      <p>
+        If you are looking for a job,
+        <span
+          ><a href="../assets/signup.html" class="link_tag">click here</a>
+        </span>
+      </p>
+      <div id="signup_divs">
+        <div id="right_div">
+          <!-- form  -->
+          <form onsubmit="add_user(event)">
+            <div>
+              <label for="company_name">Company Name</label>
+              <input
+                type="text"
+                id="company_name"
+                name="company_name"
+                required
+                placeholder="e.g. Amazon or CareerZen consulting"
+              />
+            </div>
+            <div>
+              <label for="your_role">Your Role</label>
+              <input
+                type="email"
+                id="your_role"
+                name="your_role"
+                required
+                placeholder="e.g. Talent Acquisition Specialist"
+              />
+            </div>
+            <div>
+              <label for="mobile_num">Mobile Number</label>
+              <input
+                type="tel"
+                placeholder="81234 56789"
+                id="mobile_num"
+                name="mobile_num"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="comp_email">Email</label>
+              <input
+                type="email"
+                id="comp_email"
+                name="comp_email"
+                required
+                placeholder="Your company email address"
+              />
+            </div>
+            <div>
+              <label for="comp_password">Password</label>
+              <input
+                type="password"
+                id="comp_password"
+                name="comp_password"
+                required
+                placeholder="Set a password"
+              />
+            </div>
+
+            <div class="custom">
+              <label>Company Type</label>
+              <div>
+                <input
+                  type="radio"
+                  name="comp_type"
+                  id="direct"
+                  value="I am a working professional"
+                  required
+                />
+                <label for="direct">Direct (hire for single company)</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="comp_type"
+                  id="agency"
+                  value="I am a fresher"
+                />
+                <label for="agency">Agency (hire for multiple companies)</label>
+              </div>
+            </div>
+
+            <input type="checkbox" name="agree" id="agree" required />
+            <p class="agree_p">
+              I agree to the
+              <span><a href="" class="link_tag">Terms of Service</a></span>
+              and <span><a href="" class="link_tag"> Privacy Policy</a></span
+              >. I agree to receive the default email notifications, which I can
+              unsubscribe from at any time.
+            </p>
+
+            <!-- login links  -->
+            <div id="login_links">
+              <div>
+                <button class="btn_linkedin">
+                  <i class="fab fa-linkedin" area-hidden="true"></i> Sign in
+                  with Linkedin
+                </button>
+              </div>
+            </div>
+
+            <p>
+              Already have an account?
+              <a href="../assets/login.html" class="link_tag">Log in here</a>
+            </p>
+          </form>
+        </div>
+        <div id="left_div">
+          <div class="testimonials">
+            <div class="testimonialContent">
+              <div class="thoughts">
+                <p>
+                  "The quality of profiles is really great on Instahyre. As
+                  compared to other platforms, most relevant and niche profiles
+                  are available!"
+                </p>
+              </div>
+              <div class="about">
+                <div>
+                  <img
+                    src="https://static.instahyre.com/images/employers/sandhya.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3>Sandhya Sachan</h3>
+                  <p>Tech Recruiter at Amazon</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonialContent">
+              <div class="thoughts">
+                <p>
+                  "On Instahyre the quality of candidates is superior to that on
+                  any other platform. Plus, the response from candidates is far
+                  better."
+                </p>
+              </div>
+              <div class="about">
+                <div>
+                  <img
+                    src="https://static.instahyre.com/images/employers/ajith.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3>Ajith Inguva</h3>
+                  <p>Senior Recruiter at Zomato</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content divs  -->
+      <div id="content_divs">
+        <div>
+          <h3>Does this cost anything?</h3>
+          <p>
+            Our always free plan gives you a limited number of high quality
+            profiles every month. For unlimited usage and additional features,
+            we offer various subscription plans.
+          </p>
+        </div>
+        <div>
+          <h3>What kind of candidates can I find on Instahyre?</h3>
+          <p>
+            You can currently use Instahyre to find talent for Software
+            Engineering, Information Technology, Data Science, Product
+            Management, Design, Marketing, Sales, Operations and HR.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer">
+      <div id="ins_footer">
+        <div>
+          <p>Jobs by Location</p>
+          <a href=""><p>Jobs by Bangalore</p></a>
+          <a href=""><p>Jobs by Delhi / NCR</p></a>
+          <a href=""><p>Jobs by Hyderabad</p></a>
+          <a href=""><p>Jobs by Mumbai</p></a>
+        </div>
+        <div>
+          <p>Jobs by Function</p>
+          <a href=""><p>Software Engineering Jobs</p></a>
+          <a href=""><p>Technical Management Jobs</p></a>
+          <a href=""><p>Marketing Jobs</p></a>
+          <a href=""><p>Sales Jobs</p></a>
+        </div>
+        <div>
+          <p>For Employers</p>
+          <a href=""><p>Post Your Jobs</p></a>
+          <a href=""><p>Success Stories</p></a>
+        </div>
+        <div>
+          <p>Instahyre</p>
+          <a href=""><p>About</p></a>
+          <a href=""><p>Privacy</p></a>
+          <a href=""><p>Terms</p></a>
+        </div>
+        <div>
+          <p>Connect</p>
+          <a href=""><p>Help Center</p></a>
+          <a href=""><p>Blog</p></a>
+          <div id="img_link">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="../js/signup.js"></script> -->
+  </body>
+</html>
