@@ -58,6 +58,14 @@
     color: white;
 }
 
+.navbar_links li.active a {
+    color: white !important;
+}
+
+.navbar_links li a:hover {
+    color: white !important;
+}
+
 /* image section  */
 #cont {
     width: 100%;
@@ -74,7 +82,8 @@
 
 #cont div img {
     border-radius: 50%;
-    width: 40%;
+    width: 10%;
+    object-fit: cover;
 }
 
 #cont div h1 {
