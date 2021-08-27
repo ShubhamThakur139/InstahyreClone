@@ -8,6 +8,9 @@
 
 /* Navbar styling  */
 #main {
+    /* overflow: hidden; */
+    /* position: fixed; */
+    top: 0;
     width: 100%;
     height: 50px;
     background-color: #414654;
@@ -92,22 +95,83 @@ p {
     height: 70%;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 
 #left_div {
     padding: 2% 1%;
     width: 48%;
     border-right: 1px solid #EdEdEd;
-    height: 98%;
-    /* border: 1px solid blue; */
+    height: 78%;
 }
 
+/* left div testimonial  */
+.testimonials {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.testimonials>div {
+    margin: 6% 0;
+}
+
+.thoughts {
+    width: 75%;
+    padding: 4% 2%;
+    background-color: #F4F3EC;
+    border-radius: 6px;
+    margin: auto;
+    height: 55%;
+    color: #4A5056;
+    text-align: center;
+}
+
+.thoughts p {
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.about>div:first-child {
+    width: 25%;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about>div:last-child {
+    width: 50%;
+}
+
+.about>div:last-child h3 {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.about>div:last-child p {
+    color: #4A5056;
+    margin-left: 2%;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+
+/* right div styling  */
 #right_div {
     padding: 2% 5%;
     width: 50%;
     height: 98%;
-    /* border: 1px solid blue; */
 }
 
 
@@ -147,7 +211,6 @@ p {
     height: 43px;
     object-fit: cover;
     width: 42px;
-    /* font-size: 40px; */
 }
 
 
@@ -189,7 +252,7 @@ form>div label {
 }
 
 form>div input {
-    padding: 0 2%;
+    padding: 0 4%;
     color: rgb(65, 64, 64);
     font-size: 14px;
     height: 38px;
@@ -247,6 +310,10 @@ form input[type='submit']:hover {
     color: #0090CC;
 }
 
+.link_tag:hover {
+    color: #23527C !important;
+    text-decoration: underline !important;
+}
 
 /* signup div styling  end*/
 
@@ -256,7 +323,6 @@ form input[type='submit']:hover {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 
 #content_divs>div {
@@ -276,7 +342,7 @@ form input[type='submit']:hover {
 
 /* Sign up Styling end */
 
-/* footer styling  */
+
 /* footer styling  */
 #footer {
     width: 100%;
@@ -313,6 +379,10 @@ form input[type='submit']:hover {
     line-height: 22px;
     word-spacing: 2px;
     letter-spacing: 0.2px;
+}
+
+#ins_footer a:hover {
+    text-decoration: underline !important;
 }
 
 #img_link {

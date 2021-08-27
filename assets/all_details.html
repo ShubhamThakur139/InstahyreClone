@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/all_details.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.instahyre.com/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div id="main">
+      <div class="navbar">
+        <div class="navbar_heading">
+          <a href="">Instahyre</a>
+        </div>
+        <div class="navbar_links">
+          <ul>
+            <li><a href="">GO PREMIUM</a></li>
+            <li><a href="">ACTIVITY</a></li>
+            <li><a href="">OPPORTUNITIES</a></li>
+            <li><a href="../assets/profile.html">PROFILE</a></li>
+            <li><a href="">SETTINGS</a></li>
+            <li><a href="../assets/signout.html">SIGN OUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content part  -->
+    <div id="main2">
+      <form onsubmit="add_details(event)">
+        <div id="content">
+          <!-- 1 section  -->
+          <h1>Add Your Skills</h1>
+          <p>Hi Name! We just need some quick info about your ideal job.</p>
+          <hr />
+
+          <div>
+            <!-- working  -->
+            <div>
+              <h4>Are you a working professional or fresher?</h4>
+              <input
+                type="radio"
+                name="working"
+                id="professional"
+                value="I am a working professional"
+                required
+              />
+              <label for="professional">I am a working professional</label>
+              <br />
+              <input
+                type="radio"
+                name="working"
+                id="fresher"
+                value="I am a fresher"
+              />
+              <label for="fresher">I am a fresher</label>
+            </div>
+            <!-- internships  -->
+            <div>
+              <h4>
+                How many years of experience do you have? Don't include
+                internships.
+              </h4>
+              <input type="number" id="exp" placeholder="e.g. 3" required />
+            </div>
+            <!-- current role:  -->
+            <div>
+              <h4>Select your current role:</h4>
+              <select name="" id="job_role" required>
+                <option value="fsd">Full-Stack Development</option>
+                <option value="fe">Frontend Enginner</option>
+                <option value="be">Backend Enginner</option>
+                <option value="sd">Software Developer</option>
+                <option value="bd">Backend Developer</option>
+                <option value="jd">Java Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 2nd section  -->
+          <h1>Specify job preferences</h1>
+          <p>so we can find highly relevant jobs for you</p>
+          <hr />
+          <div>
+            <!-- currently located  -->
+            <div>
+              <h4>Where are you currently located?</h4>
+              <select name="" id="city" class="wide" required>
+                <option value="bang">Bangalore</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="gurg">Gurgaon</option>
+                <option value="del">Delhi</option>
+                <option value="chn">Chennai</option>
+                <option value="wfh">Work From Home</option>
+              </select>
+            </div>
+
+            <!-- open to work  -->
+            <div>
+              <h4>Where are you open to working?</h4>
+              <input
+                type="text"
+                name=""
+                id="open_work"
+                class="wide"
+                placeholder="e.g. Anywhere in india, Bangalore"
+                required
+              />
+            </div>
+            <!-- minimum salary -->
+            <div>
+              <h4>What is the minimum salary you will consider?</h4>
+              <input
+                type="text"
+                name=""
+                id="min_sal"
+                placeholder="e.g. 5LPA-7LPA"
+                required
+              />
+            </div>
+            <!-- when you join  -->
+            <div>
+              <h4>When you can join the company if selected?</h4>
+              <select name="" id="duration" required>
+                <option value="imm">Immediately</option>
+                <option value="with_15">within 15 days</option>
+                <option value="with_2">within 2 months</option>
+                <option value="with_3">within 3 months</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 3rd section  -->
+          <h1>Upload resume</h1>
+          <p>An updated resume is key to being shortlisted</p>
+          <hr />
+          <div>
+            <div>
+              <h4>
+                Have you done any internships?If yes, enter the company names:
+              </h4>
+              <input
+                type="text"
+                name=""
+                id="int_comp_name"
+                class="wide"
+                placeholder="e.g. 3 months at Facebook, Google"
+                required
+              />
+            </div>
+
+            <div>
+              <h4>Enter your educational qualifications:</h4>
+              <div class="edu">
+                <select name="" id="degree" required>
+                  <option value="">Course</option>
+                  <option value="bca">BCA</option>
+                  <option value="bba">BBA</option>
+                  <option value="mca">MCA</option>
+                  <option value="mba">MBA</option>
+                  <option value="btech">B.Tech</option>
+                  <option value="mtech">M.Tech</option>
+                </select>
+                <select name="" id="course_spe" required>
+                  <option value="">Specialization</option>
+                  <option value="cs">Computer Science</option>
+                  <option value="hr">Human Resources</option>
+                  <option value="devops">Devops</option>
+                  <option value="project">Project Manager</option>
+                  <option value="aerengin">Aeronatics Engineer</option>
+                </select>
+                <select name="" id="passing_year" required>
+                  <option value="">Year</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                name=""
+                id="uni_name"
+                class="wide"
+                placeholder="University / Institute"
+                required
+              />
+            </div>
+            <div>
+              <h4>
+                If you don't have an updated resume, we strongly suggest you
+                create one. <br />
+                Otherwise upload a PDF of your updated LinkedIn profile.
+              </h4>
+              <input type="file" name="Click" id="resume" required />
+            </div>
+          </div>
+
+          <hr />
+          <div>
+            <input type="submit" value="Next" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div id="ins_footer">
+        <div>
+          <p>Jobs by Location</p>
+          <a href=""><p>Jobs by Bangalore</p></a>
+          <a href=""><p>Jobs by Delhi / NCR</p></a>
+          <a href=""><p>Jobs by Hyderabad</p></a>
+          <a href=""><p>Jobs by Mumbai</p></a>
+        </div>
+        <div>
+          <p>Jobs by Function</p>
+          <a href=""><p>Software Engineering Jobs</p></a>
+          <a href=""><p>Technical Management Jobs</p></a>
+          <a href=""><p>Marketing Jobs</p></a>
+          <a href=""><p>Sales Jobs</p></a>
+        </div>
+        <div>
+          <p>For Employers</p>
+          <a href=""><p>Post Your Jobs</p></a>
+          <a href=""><p>Success Stories</p></a>
+        </div>
+        <div>
+          <p>Instahyre</p>
+          <a href=""><p>About</p></a>
+          <a href=""><p>Privacy</p></a>
+          <a href=""><p>Terms</p></a>
+        </div>
+        <div>
+          <p>Connect</p>
+          <a href=""><p>Help Center</p></a>
+          <a href=""><p>Blog</p></a>
+          <div id="img_link">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
