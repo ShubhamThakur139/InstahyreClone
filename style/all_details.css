@@ -69,7 +69,7 @@
 #content {
     width: 50%;
     margin: auto;
-    height: 1220px;
+    height: 1230px;
     padding: 1.5% 2%;
     background-color: #fff;
     border: 1px solid #c5c9cb;
@@ -117,14 +117,19 @@
 #content input[type="text"],
 input[type="number"],
 select {
-    height: 30px;
+    height: 32px;
     width: 50%;
     outline: none;
     border: 1px solid #c5c9cb;
     padding: 1% 2%;
-    font-size: 14px;
-    color: #414654;
-    letter-spacing: 0.3px;
+    font-size: 15px;
+    color: #414654 !important;
+    letter-spacing: 0.6px;
+    border-radius: 3px;
+}
+
+#content input:focus {
+    border: 0.5px solid #0090CC;
 }
 
 .wide {

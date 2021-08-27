@@ -6,6 +6,7 @@ user_info.forEach((element) => {
   if (element.id === data[1].id) {
     // console.log(element);
     document.getElementById("user_name").innerText = element.name;
+    document.title = `${element.name} - Instahyre`;
   }
 });
 userdetails.forEach((element) => {

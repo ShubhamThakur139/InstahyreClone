@@ -158,8 +158,9 @@ function add_details(e) {
 
   user_detail_arr.push(user_details);
   localStorage.setItem("user_detail", JSON.stringify(user_detail_arr));
-  alert("User SignUp Successfully");
+
   setTimeout(() => {
+    alert("User SignUp Successfully");
     location.href = "../assets/profile.html";
   }, 1500);
 }

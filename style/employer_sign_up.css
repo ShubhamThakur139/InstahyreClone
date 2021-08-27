@@ -108,7 +108,7 @@ p {
 #left_div {
     padding: 2% 1%;
     width: 48%;
-    border-right: 1px solid #EdEdEd;
+    border-left: 1px solid #EdEdEd;
     height: 78%;
 }
 
@@ -144,7 +144,8 @@ p {
     display: flex;
     align-items: center;
     width: 60%;
-    margin-left: auto;
+    margin: auto;
+    /* text-align: center; */
     margin-top: 5%;
 }
 
@@ -158,7 +159,9 @@ p {
 }
 
 .about>div:last-child {
-    width: 50%;
+    width: 70%;
+    margin-left: 3%;
+    text-align: left;
 }
 
 .about>div:last-child h3 {
@@ -185,7 +188,7 @@ p {
 
 /* login links button  styling*/
 #login_links div button {
-    width: 80%;
+    width: 100%;
     background-color: #0B84BD;
     color: white;
     margin: 3% 0;
@@ -208,43 +211,9 @@ p {
 
 }
 
-#login_links div:last-child button {
-    background-color: #dd4b39;
-}
-
-#login_links div:last-child button img {
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    height: 43px;
-    object-fit: cover;
-    width: 42px;
-}
-
-
 .btn_linkedin:hover {
     background-color: #005983 !important;
     border-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn_google:hover {
-    background-color: #c23321 !important;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-
-/* line styling  */
-fieldset {
-    padding: 0;
-    min-width: 0;
-    margin: 8% 0;
-    border: 0;
-    border-top: 1px solid #D1D1D1;
-}
-
-legend {
-    padding: 0 5%;
-    color: #9e9d9d;
 }
 
 /* form styling */
@@ -255,11 +224,15 @@ form>div {
 form>div label {
     width: 100%;
     color: rgb(88, 88, 88);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 550;
+    word-spacing: 0.7px;
 }
 
-form>div input {
+form>div input[type='text'],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
     padding: 0 4%;
     color: rgb(65, 64, 64);
     font-size: 15px;
@@ -274,12 +247,34 @@ form>div input {
     border-radius: 3px;
 }
 
+.custom>label:first-child {
+    display: block;
+    margin-bottom: 3%;
+}
+
+.custom>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.custom>div:last-child {
+    margin-bottom: 10px;
+}
+
+.custom>div label {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
 form>div input:focus {
     border: 1px solid #0090CC;
 }
 
 form>input {
-    margin-top: 12px;
+    margin-top: 7px;
     float: left;
     margin-right: 8px;
 }

@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Instahyre</title>
-    <link rel="stylesheet" href="../style/login.css" />
+    <title>Settings - Instahyre</title>
+    <link rel="stylesheet" href="../style/setting.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-
     <link
       rel="icon"
       type="image/x-icon"
@@ -28,69 +27,54 @@
         </div>
         <div class="navbar_links">
           <ul>
-            <li><a href="">INVITE FRIENDS</a></li>
-            <li><a href="">CUSTOMERS</a></li>
-            <li class="active"><a href="">LOGIN</a></li>
-            <li><a href="../assets/signup.html">SIGNUP</a></li>
-            <li><a href="">EMPLOYERS</a></li>
+            <li><a href="">GO PREMIUM</a></li>
+            <li><a href="">ACTIVITY</a></li>
+            <li><a href="">OPPORTUNITIES</a></li>
+            <li><a href="../assets/profile.html">PROFILE</a></li>
+            <li class="active">
+              <a href="../assets/setting.html">SETTINGS</a>
+            </li>
+            <li><a href="../assets/signout.html">SIGN OUT</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Login Content  -->
-    <div id="login">
-      <div id="login_details">
-        <h2>Login</h2>
-        <p>
-          Don't have an account?
-          <span
-            ><a href="../assets/signup.html" class="link_tag">Sign Up</a></span
-          >
-        </p>
-
-        <!-- login links  -->
-        <div id="login_links">
-          <div>
-            <button class="btn_linkedin">
-              <i class="fab fa-linkedin" area-hidden="true"></i> Sign in with
-              Linkedin
-            </button>
-          </div>
-          <div>
-            <button class="btn_google">
-              <img
-                src="https://static.instahyre.com/images/icons/google-signin.png"
-                alt=""
-              />
-              Sign in with Google
-            </button>
-          </div>
+    <!-- content part  -->
+    <div id="main2">
+      <div id="inside">
+        <h1>Account Settings</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" readonly />
         </div>
-
-        <!-- line  -->
-        <fieldset class="line">
-          <legend>OR</legend>
-        </fieldset>
-
-        <form onsubmit="login_user(event)">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="login_email" name="email" required />
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" id="login_password" name="password" />
-          </div>
-          <div>
-            <input type="submit" value="Login" />
-          </div>
-          <a href="" class="link_tag">Forgot password?</a>
-        </form>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" readonly />
+        </div>
+        <div>
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="alt_phone">Alternative Phone</label>
+          <input type="tel" id="alt_phone" name="alt_phone" required />
+        </div>
+        <p class="agree_p">
+          Want to change how you receive job alert notifications?
+          <a href="" class="link_tag">Click here</a>
+        </p>
+        <div class="sub">
+          <input type="submit" value="Save Changes" />
+        </div>
       </div>
     </div>
 
-    <!-- Footer  -->
+    <!-- Footer -->
     <div id="footer">
       <div id="ins_footer">
         <div>
@@ -131,6 +115,17 @@
       </div>
     </div>
 
-    <script src="../js/login.js"></script>
+    <script>
+      let data = JSON.parse(localStorage.getItem("userLogged"));
+      let user_info = JSON.parse(localStorage.getItem("All_Valid_Users"));
+
+      user_info.forEach((element) => {
+        if (element.id === data[1].id) {
+          // console.log(element);
+          document.getElementById("name").value = element.name;
+          document.getElementById("email").value = element.email;
+        }
+      });
+    </script>
   </body>
 </html>
