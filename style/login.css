@@ -169,9 +169,10 @@ form>div label {
 form>div input {
     padding: 0 2%;
     color: rgb(65, 64, 64);
-    font-size: 14px;
+    font-size: 15px;
     height: 38px;
     margin-top: 2%;
+    letter-spacing: 0.6px;
     margin-bottom: 5%;
     outline: none;
     border: none;
@@ -181,7 +182,7 @@ form>div input {
 }
 
 form>div input:focus {
-    border: 1px solid rgba(0, 0, 255, 0.514);
+    border: 1px solid #0090CC;
 }
 
 form input[type='submit'] {
