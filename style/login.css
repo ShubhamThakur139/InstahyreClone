@@ -52,6 +52,14 @@
     border-radius: 3px;
 }
 
+.navbar_links li.active a {
+    color: white !important;
+}
+
+.navbar_links li a:hover {
+    color: white !important;
+}
+
 .navbar_links li:last-child a {
     padding: 1%;
     background-color: #02bfa0;
