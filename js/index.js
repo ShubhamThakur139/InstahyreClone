@@ -1,16 +1,24 @@
 
 let signUpButL = document.getElementById("SignInWithLinkedIn");
-signUpButL.onclick = function(){SignUpPageL()}
+signUpButL.onclick = function(){SignUpPage()}
 
 
-function SignUpPagL(){
-    window.location="./assets/signup.html";
-}
 
 let signUpButG = document.getElementById("SignInWithGoogle");
-signUpButG.onclick = function(){SignUpPageG()}
+signUpButG.onclick = function(){SignUpPage()}
+
+
+
+let signUpButD = document.getElementById("signinDreamJob");
+signUpButD.onclick = function(){SignUpPage()}
 
 
 function SignUpPageG(){
-    window.location="./assets/signup.html";
+    window.location="./assets/login.html";
+}
+
+
+
+function SignUpPage(){
+    window.location="./assets/login.html";
 }
