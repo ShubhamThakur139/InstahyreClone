@@ -205,10 +205,11 @@ p {
 
 #login_links div button i {
     position: absolute;
-    left: 3px;
-    font-size: 40px;
-    top: 2px;
-
+    left: 0px;
+    font-size: 28px;
+    padding: 0 3%;
+    border-right: 1px solid #096d9b;
+    top: 9px;
 }
 
 .btn_linkedin:hover {

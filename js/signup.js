@@ -13,12 +13,16 @@ if (id === null) {
 function isEmailExist(email) {
   let isTrue = false;
   let users = JSON.parse(localStorage.getItem("All_Valid_Users"));
-  users.forEach((element) => {
-    if (element.email === email) {
-      isTrue = true;
-      return isTrue;
-    }
-  });
+  if (users == null) {
+    isTrue = true;
+  } else {
+    users.forEach((element) => {
+      if (element.email === email) {
+        isTrue = true;
+        return isTrue;
+      }
+    });
+  }
 
   return isTrue;
 }
