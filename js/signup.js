@@ -161,6 +161,6 @@ function add_details(e) {
 
   setTimeout(() => {
     alert("User SignUp Successfully");
-    location.href = "../assets/profile.html";
+    location.href = "../assets/opportunities.html";
   }, 1500);
 }

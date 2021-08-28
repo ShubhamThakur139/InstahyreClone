@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     /* font-family: "Gotham SSm A","Gotham SSm B"; */
@@ -12,7 +12,7 @@
     height: 50px;
     background-color: #414654;
     color: #c5c9cb;
-    position: fixed; 
+    position: fixed;
 }
 
 .navbar {
@@ -61,36 +61,39 @@
     background-color: #02bfa0;
     color: white !important;
 }
-.height{
+
+.height {
     height: 300px;
     width: 100%;
 }
+
 /* SignIn */
 
-.SignIn{
+.SignIn {
     background-image: url("../images/backimage.jpg");
     background-size: cover;
     width: 100%;
     min-height: 475px;
     display: flex;
 }
+
 /* .SignIn img{
     opacity: 0.5; 
 }*/
 
-.SignInDiv{
-   float: left;
-   padding: 2%;
-   background-color: white;
-   margin: auto;
-   width: 35%;
-   text-align: center;
-   padding-bottom: 0px;
+.SignInDiv {
+    float: left;
+    padding: 2%;
+    background-color: white;
+    margin: auto;
+    width: 35%;
+    text-align: center;
+    padding-bottom: 0px;
 }
 
-.SignInDiv p:nth-child(1){
+.SignInDiv p:nth-child(1) {
     font-size: 32px;
-    font-weight:500;
+    font-weight: 500;
 }
 
 /* .SignInDiv p:last-child{
@@ -99,10 +102,11 @@
 } */
 
 
-.SignInDiv a{
+.SignInDiv a {
     color: #02BFA0;
     font-weight: 600;
 }
+
 #loginLinks div button {
     width: 100%;
     background-color: #0B84BD;
@@ -151,8 +155,7 @@
     border-color: rgba(0, 0, 0, 0.2);
 }
 
-#recruiterSignup{
- 
+#recruiterSignup {
     background-color: #EC8A52;
     color: white;
     border: none;
@@ -162,44 +165,50 @@
     font-size: 16px;
 }
 
-#recruiterSignup:hover{
-    background-color: #E2783B ;
+#recruiterSignup a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#recruiterSignup:hover {
+    background-color: #E2783B;
 }
 
 
 /* ColabrotedCompinies */
 
-.ColabrotedCompinies{
+.ColabrotedCompinies {
     width: 100%;
     margin: auto;
     text-align: center;
-   
+
 }
 
-.ColabrotedCompinies p{
+.ColabrotedCompinies p {
     font-size: 25px;
-   padding-top: 3%;
+    padding-top: 3%;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.companiesImage{
+.companiesImage {
     margin-top: 2%;
     width: 70%;
     height: 290px;
     margin-bottom: 2%;
-  
+
 }
 
 /* bullet Points About Instahyre */
-.bulletPointsMainDiv{
+.bulletPointsMainDiv {
     width: 100%;
     margin: auto;
     background-color: #f6f7f9;
     padding-top: 1%;
 }
 
-.bulletPointsDiv{
+.bulletPointsDiv {
 
     width: 45%;
     margin: auto;
@@ -208,49 +217,49 @@
 
 }
 
-.bulletPointsDiv p:nth-child(1){
+.bulletPointsDiv p:nth-child(1) {
     font-size: 16px;
     margin-bottom: 14px;
     font-weight: 600;
-    
+
     color: #4A5056;
 }
 
-.bulletPointsDiv p:nth-child(2){
+.bulletPointsDiv p:nth-child(2) {
     color: #4A5056;
     font-size: 14px;
 }
 
 .bulletPoints {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
 }
 
-.bulletPoints div:nth-child(1){
+.bulletPoints div:nth-child(1) {
     width: 60%;
- }
+}
 
- .bulletPoints div:nth-child(2){
+.bulletPoints div:nth-child(2) {
     text-align: center;
     margin: auto;
     padding-left: 15%;
- }
+}
 
- /* Testimonials */
- .testimonialsMainDiv{
-     width: 100%;
-     background-color: #f6f7f9;
- }
- 
- .testimonials{
-     width: 60%;
-     margin: auto;
-     display: flex;
-     padding-top: 3%;
- }
+/* Testimonials */
+.testimonialsMainDiv {
+    width: 100%;
+    background-color: #f6f7f9;
+}
 
-.thoughts{
+.testimonials {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding-top: 3%;
+}
+
+.thoughts {
     width: 70%;
     padding: 4%;
     background-color: #F4F3EC;
@@ -260,33 +269,39 @@
     color: #4A5056;
     text-align: center;
 }
-.about{
+
+.about {
     display: grid;
     width: 70%;
     grid-template-columns: 28% 72%;
-  
+
     margin: auto;
     margin-top: 5%;
 }
-.about img{
-   border-radius: 50%;
-   width: 95%;
+
+.about img {
+    border-radius: 50%;
+    width: 95%;
 }
-.about h3{
+
+.about h3 {
     color: #4A5056;
     padding-top: 4%;
     margin-left: 2%;
     font-size: 16px;
- }
- .about p{
+}
+
+.about p {
     color: #4A5056;
     margin-left: 2%;
- }
- .register{
-    text-align: center;
-   
 }
- .testimonialsMainDiv button{
+
+.register {
+    text-align: center;
+
+}
+
+.testimonialsMainDiv button {
     background-color: #02BFA0;
     border: none;
     color: white;
@@ -297,10 +312,11 @@
     font-weight: 600;
     border-radius: 4px;
     padding: 8px 13px 8px 13px;
- }
- .testimonialsMainDiv button:hover{
-     background-color: #029A82;
- }
+}
+
+.testimonialsMainDiv button:hover {
+    background-color: #029A82;
+}
 
 
 /* footer styling  */

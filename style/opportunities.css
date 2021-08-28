@@ -1,20 +1,20 @@
-
 /* Opportunities Page */
-*{
+* {
     margin: 0;
     box-sizing: border-box;
-    /* font-family: "Gotham SSm A","Gotham SSm B"; */
+    /* font-family: "Gotham SSm A", "Gotham SSm B"; */
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.8;
+    /* line-height: 1.8; */
 }
 
 /* Navbar styling  */
 #main {
+    overflow: hidden;
+    position: fixed;
     width: 100%;
     height: 50px;
     background-color: #414654;
     color: #c5c9cb;
-    position: fixed; 
 }
 
 .navbar {
@@ -26,64 +26,70 @@
     align-items: center;
 }
 
-.navbarHeading a {
+.navbar_heading a {
     text-decoration: none;
     color: #c5c9cb;
     font-size: 22px;
     font-weight: 600;
 }
 
-.navbarLlinks {
-    width: 50%;
+.navbar_links {
+    width: 65%;
     text-align: right;
 }
 
-.navbarLlinks li {
+.navbar_links li {
     display: inline;
     list-style: none;
-    margin-left: 2.2%;
+    margin-left: 4%;
 }
 
-.navbarLlinks li a:hover {
-    color: white;
-}
-
-.navbarLlinks li a {
+.navbar_links li a {
     text-decoration: none;
     color: #c5c9cb;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
     border-radius: 3px;
 }
 
-.navbarLlinks li.active a {
+.navbar_links li:first-child a {
     padding: 1%;
     background-color: #02bfa0;
+    color: white;
+}
+
+.navbar_links li.active a {
     color: white !important;
 }
-.height{
+
+.navbar_links li a:hover {
+    color: white !important;
+}
+
+
+.height {
     height: 300px;
     width: 100%;
 }
-.opportunities{
+
+.opportunities {
     background-color: #f6f7f9;
     padding-bottom: 3%;
 }
 
-.countOfJobs{
+.countOfJobs {
     background-color: #4C5365;
     padding: 50px 10px 40px 10px;
     text-align: center;
 }
 
-.countOfJobs p{
+.countOfJobs p {
     color: white;
     font-size: 25px;
 }
 
-.JobsAndFilter{
+.JobsAndFilter {
     margin: auto;
     width: 70%;
     display: grid;
@@ -91,41 +97,43 @@
     grid-gap: 3%;
 }
 
-.filterAndAdds{
+.filterAndAdds {
     margin-top: 18%;
 }
 
-.filterAndAdds h4{
+.filterAndAdds h4 {
     margin-bottom: 3%;
     color: #40454A;
 }
 
-.filterAndAdds div{
+.filterAndAdds div {
     background-color: white;
     margin-top: 12%;
     padding: 5%;
 }
-.filterAndAdds label{
+
+.filterAndAdds label {
     color: #555A61;
     font-size: 13px;
     font-weight: 600;
 }
 
 
-.filterAndAdds div:nth-child(1) p{
-   color: #8A8A8A;
-   margin-bottom: 6%;
-   font-size: 13px;
+.filterAndAdds div:nth-child(1) p {
+    color: #8A8A8A;
+    margin-bottom: 6%;
+    font-size: 13px;
 }
 
-.jobPost{
+.jobPost {
     display: grid;
     grid-template-columns: 10% 68% 20%;
     margin-top: 3%;
     grid-gap: 1%;
     background-color: white;
 }
-.jobPost p:nth-child(2){
+
+.jobPost p:nth-child(2) {
     font-weight: 600;
     font-size: 14px;
     margin-top: 1%;
@@ -133,48 +141,51 @@
 
 
 
-#availableJobs p{
+#availableJobs p {
     color: #4A5056;
     font-size: 14px;
 }
 
 
-#availableJobs h3{
+#availableJobs h3 {
     color: #4A5056;
     font-size: 16px;
 }
 
 
-.jobPost p:nth-child(3){
+.jobPost p:nth-child(3) {
     display: inline;
     color: #8A8A8A !important;
 }
-.jobPost p:nth-child(4){
+
+.jobPost p:nth-child(4) {
     margin-left: 4%;
     display: inline;
     color: #8A8A8A !important;
 }
-.companyIcon{
+
+.companyIcon {
     margin: auto;
     margin-top: 7%;
     padding: 9%;
 }
 
-.companyIcon img{
- width: 100%;
+.companyIcon img {
+    width: 100%;
 }
 
-.description{
+.description {
     padding: 2%;
 }
 
-.jobDetailButton{
+.jobDetailButton {
     text-align: center;
     margin: auto;
 }
 
-.jobDetailButton button:nth-child(1){
+.jobDetailButton button:nth-child(1) {
     background-color: #02BFA0;
+    cursor: pointer;
     border: none;
     color: white;
     font-size: 14px;
@@ -184,26 +195,26 @@
     font-weight: 600;
     border-radius: 4px;
     padding: 8px 13px 8px 13px;
- }
+}
 
 
- .jobDetailButton button:nth-child(1):hover{
+.jobDetailButton button:nth-child(1):hover {
     background-color: #029A82;
 }
 
-.interestButton{
+.interestButton {
     border: none;
     background-color: white;
     color: #8A8A8A;
     font-size: 14px;
     display: block;
- }
+}
 
-.interestButton:hover{
+.interestButton:hover {
     text-decoration: underline;
- }
+}
 
- 
+
 /* footer styling  */
 
 #footer {
