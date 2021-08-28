@@ -1,10 +1,13 @@
 let data = JSON.parse(localStorage.getItem("userLogged"));
+if (data == null) {
+  // alert(`User is not Logged in`);
+  location.href = "../assets/login.html";
+}
 let userdetails = JSON.parse(localStorage.getItem("user_detail"));
 let user_info = JSON.parse(localStorage.getItem("All_Valid_Users"));
 
 user_info.forEach((element) => {
   if (element.id === data[1].id) {
-    // console.log(element);
     document.getElementById("user_name").innerText = element.name;
     document.title = `${element.name} - Instahyre`;
   }

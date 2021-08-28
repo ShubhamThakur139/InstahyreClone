@@ -22,13 +22,16 @@ function login_user(e) {
       );
 
       alert(`Login Successfully`);
-
-      location.href = "../assets/profile.html";
+      location.href = "../assets/opportunities.html";
+      document.getElementById("login_email").value = "";
+      document.getElementById("login_password").value = "";
       return;
     }
   });
 
   if (userExist === false) {
     alert(`Invalid Credentials`);
+    document.getElementById("login_email").value = "";
+    document.getElementById("login_password").value = "";
   }
 }

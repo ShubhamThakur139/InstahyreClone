@@ -121,6 +121,10 @@
 
     <script>
       let data = JSON.parse(localStorage.getItem("userLogged"));
+      if (data == null) {
+        // alert(`User is not Logged in`);
+        location.href = "../assets/login.html";
+      }
       let user_info = JSON.parse(localStorage.getItem("All_Valid_Users"));
 
       user_info.forEach((element) => {
