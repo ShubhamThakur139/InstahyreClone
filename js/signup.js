@@ -14,7 +14,7 @@ function isEmailExist(email) {
   let isTrue = false;
   let users = JSON.parse(localStorage.getItem("All_Valid_Users"));
   if (users == null) {
-    isTrue = true;
+    isTrue = false;
   } else {
     users.forEach((element) => {
       if (element.email === email) {
