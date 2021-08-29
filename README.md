@@ -13,9 +13,9 @@ In this project we have used the following tech stack.
 # Snapshots 📷
 
 1. Landing Page
-![Landing Page](C:\Users\DELL\Downloads\Login.jpeg)
+![Landing Page](C\Login.jpeg)
 2. Login Page
-![Login Page](C:\Users\DELL\Downloads\Login.jpeg)
+![Login Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/LogInPage.png)
 3. SignUp Page
 ![Sign Up Page](C:\Users\DELL\Downloads\Login.jpeg)
 4. All Details Page
