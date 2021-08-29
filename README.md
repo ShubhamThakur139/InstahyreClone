@@ -25,9 +25,9 @@ In this project we have used the following tech stack.
 6. Opportunity Page 2
 ![Opportunity Page 2](C:\Users\DELL\Downloads\Login.jpeg)
 7. Profile Page
-![Profile text](C:\Users\DELL\Downloads\Login.jpeg)
+![Profile Page](C:\Users\DELL\Downloads\Login.jpeg)
 8. Setting Page
-![Setting text](C:\Users\DELL\Downloads\Login.jpeg)
+![Setting Page](C:\Users\DELL\Downloads\Login.jpeg)
 
 # Features ✨
 1. User can SignUp by providing Name Email and Password
