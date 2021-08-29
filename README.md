@@ -11,9 +11,23 @@ In this project we have used the following tech stack.
 - JavaScript: Used for performing functionality like login signup and showing data
 
 # Snapshots 📷
-1. Login Page
-![alt text](C:\Users\DELL\Downloads\Login.jpeg)
-2. SignUp Page
+
+1. Landing Page
+![Landing Page](C:\Users\DELL\Downloads\Login.jpeg)
+2. Login Page
+![Login Page](C:\Users\DELL\Downloads\Login.jpeg)
+3. SignUp Page
+![Sign Up Page](C:\Users\DELL\Downloads\Login.jpeg)
+4. All Details Page
+![All Details Page](C:\Users\DELL\Downloads\Login.jpeg)
+5. Opportunity Page
+![Opportunity Page 1](C:\Users\DELL\Downloads\Login.jpeg)
+6. Opportunity Page 2
+![Opportunity Page 2](C:\Users\DELL\Downloads\Login.jpeg)
+7. Profile Page
+![Profile text](C:\Users\DELL\Downloads\Login.jpeg)
+8. Setting Page
+![Setting text](C:\Users\DELL\Downloads\Login.jpeg)
 
 # Features ✨
 1. User can SignUp by providing Name Email and Password
