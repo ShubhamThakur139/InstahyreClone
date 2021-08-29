@@ -158,12 +158,16 @@
     height: 42px;
     background-color: #02BFA0;
     border: none;
-    color: white;
     font-size: 18px;
     border-radius: 4px;
     font-weight: 500;
     border-bottom: 3px solid #0298A2;
     cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
 .btn:hover {
