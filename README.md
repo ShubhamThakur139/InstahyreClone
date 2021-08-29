@@ -13,21 +13,21 @@ In this project we have used the following tech stack.
 # Snapshots 📷
 
 1. Landing Page
-![Landing Page](C\Login.jpeg)
+![Landing Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/landingPage.jpg)
 2. Login Page
 ![Login Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/LogInPage.png)
 3. SignUp Page
-![Sign Up Page](C:\Users\DELL\Downloads\Login.jpeg)
+![Sign Up Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/SignUpPage.jpeg)
 4. All Details Page
 ![All Details Page](C:\Users\DELL\Downloads\Login.jpeg)
 5. Opportunity Page
-![Opportunity Page 1](C:\Users\DELL\Downloads\Login.jpeg)
+![Opportunity Page 1](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/opportunitiesPage1.jpg)
 6. Opportunity Page 2
-![Opportunity Page 2](C:\Users\DELL\Downloads\Login.jpeg)
+![Opportunity Page 2](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/opportunitiesPage2.jpg)
 7. Profile Page
-![Profile Page](C:\Users\DELL\Downloads\Login.jpeg)
+![Profile Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/ProfilePage.jpg)
 8. Setting Page
-![Setting Page](C:\Users\DELL\Downloads\Login.jpeg)
+![Setting Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/SettingPage.jpg)
 
 # Features ✨
 1. User can SignUp by providing Name Email and Password
