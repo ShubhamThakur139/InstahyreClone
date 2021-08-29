@@ -73,7 +73,7 @@
           <a href="" class="link_tag">Click here</a>
         </p>
         <div class="sub">
-          <input type="submit" value="Save Changes" />
+          <input id="SvaeChanges" type="submit" value="Save Changes" />
         </div>
       </div>
     </div>
@@ -134,7 +134,13 @@
           document.getElementById("email").value = element.email;
         }
       });
-      
+
+      var saveChanges =  document.getElementById("SvaeChanges");
+      saveChanges.addEventListener('click',function(s){
+        alert("Changes Saved");
+        location.reload();
+      });
+
     </script>
   </body>
 </html>
