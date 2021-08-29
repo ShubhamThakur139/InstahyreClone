@@ -19,7 +19,7 @@ In this project we have used the following tech stack.
 3. SignUp Page
 ![Sign Up Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/SignUpPage.jpeg)
 4. All Details Page
-![All Details Page](C:\Users\DELL\Downloads\Login.jpeg)
+![All Details Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/all_details.png)
 5. Opportunity Page
 ![Opportunity Page 1](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/opportunitiesPage1.jpg)
 6. Opportunity Page 2
