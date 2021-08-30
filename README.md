@@ -34,6 +34,7 @@ In this project we have used the following tech stack.
 2. User can Login by Valid credentials
 3. User can Filter the jobs by Location 
 4. User can Filter the jobs by Company size
+5. We add some authentication to pages (Opportunity,Profile,Setting pages) that non-login user can't acess that pages
 
 # Team Members and Contributors 😇
 👤 Ravi Mane
