@@ -2,7 +2,8 @@
 
 **Instahyre** is an advanced hiring platform based on artificial intelligence, enabling recruiters to hire top talent effortlessly. ... If you are looking for jobs, Instahyre connects you with curated opportunities based on your profile. No fake jobs, mass emails or spam like you're used to on other platforms.
 
-In this project we have tried to make a clone of Instahyre. With our efforts and the technology stack, that we have learned so far in the masai school, we were able to clone the front end with high precision and quality.
+In this project we have tried to make a clone of Instahyre. With our efforts and the technology stack, that we have learned so far in the masai school, we were able to clone the front end with some authentication like Login, Sign Up and showing data we used DOM.
+Here we use localstorage to perform operations like login, signup and authentication(like if user is not login or signup he can't be able to access confidential pages which is only accessible to login or signup users).
 
 # Technology Stack Used 💻
 
