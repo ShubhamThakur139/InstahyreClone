@@ -19,7 +19,7 @@ In this project we have used the following tech stack.
 3. SignUp Page
 ![Sign Up Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/SignUpPage.jpeg)
 4. All Details Page
-![All Details Page](C:\Users\DELL\Downloads\Login.jpeg)
+![All Details Page](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/all_details.png)
 5. Opportunity Page
 ![Opportunity Page 1](https://github.com/ShubhamThakur139/InstahyreClone/blob/master/READMEimages/opportunitiesPage1.jpg)
 6. Opportunity Page 2
@@ -34,6 +34,7 @@ In this project we have used the following tech stack.
 2. User can Login by Valid credentials
 3. User can Filter the jobs by Location 
 4. User can Filter the jobs by Company size
+5. We add some authentication to pages (Opportunity,Profile,Setting pages) that non-login user can't acess that pages
 
 # Team Members and Contributors 😇
 👤 Ravi Mane
