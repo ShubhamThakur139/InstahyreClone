@@ -65,7 +65,7 @@ function add_user(e) {
 
 // create array of usersdetails
 let user_detail_arr = JSON.parse(localStorage.getItem("user_detail"));
-console.log(user_detail_arr);
+
 if (user_detail_arr == null) {
   user_detail_arr = [];
 }
