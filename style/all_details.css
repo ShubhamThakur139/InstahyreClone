@@ -68,11 +68,12 @@
 #content {
     width: 50%;
     margin: auto;
-    height: 1230px;
+    height: 1320px;
     /* height: 110%; */
     padding: 1.5% 2%;
     background-color: #fff;
     border: 1px solid #c5c9cb;
+    
 }
 
 #content h1 {
@@ -154,6 +155,7 @@ select {
 #sbbtn {
     text-align: right;
     height: 6%;
+    margin-top: 0%;
 }
 
 #content>div:last-child input {
