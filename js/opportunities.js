@@ -1,6 +1,5 @@
 let data = JSON.parse(localStorage.getItem("userLogged"));
 if (data == null) {
-  //   alert(`User is not Logged in`);
   location.href = "../assets/login.html";
 }
 const jobData = [
@@ -240,7 +239,6 @@ function show() {
 
 localStorage.setItem("alljobData", JSON.stringify(jobData));
 getJobsData = JSON.parse(localStorage.getItem("alljobData"));
-//console.log(getJobsData);
 
 var showAlljobs = function () {
   show();
