@@ -85,7 +85,8 @@
     margin: auto;
     width: 43%;
     padding: 0 4.5%;
-    height: 378px;
+    /* height: 378px;  */
+    height: auto;
     text-align: center;
     padding-top: 2%;
     box-shadow: 2px 2px 10px 1px #444;
