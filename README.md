@@ -13,6 +13,10 @@ In this project we have used the following tech stack.
 - CSS: Adding style to webpages to make page more attractive
 - JavaScript: Used for performing functionality like login signup and showing data
 
+# Deployement
+We deploy our app on Netlify. Click [Instahyre-clone](https://instahyre-clone.netlify.app/) to checkout our Project 
+
+
 # Snapshots 📷
 
 1. Landing Page
