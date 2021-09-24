@@ -10,6 +10,12 @@ function login_user(e) {
   }
 
   let users = JSON.parse(localStorage.getItem("All_Valid_Users"));
+  if (users === null) {
+    alert(`User doesn't Exist`);
+    document.getElementById("login_email").value = "";
+    document.getElementById("login_password").value = "";
+    return;
+  }
   let userExist = false;
   users.forEach((element) => {
     if (element.email === login_email) {
