@@ -302,6 +302,10 @@ form .sub {
     margin-top: 4%;
 }
 
+form input[type='checkbox'] {
+    cursor: pointer;
+}
+
 form input[type='submit'] {
     width: 55%;
     background-color: #02BFA0;
@@ -309,6 +313,7 @@ form input[type='submit'] {
     color: white;
     font-size: 16px;
     height: 40px;
+    cursor: pointer;
     font-weight: 500;
     border-bottom: 3px solid #0298A2;
 }
